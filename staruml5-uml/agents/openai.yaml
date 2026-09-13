@@ -1,0 +1,3 @@
+interface:
+  display_name: "StarUML 5 .uml Writer"
+  short_description: "Generate legacy StarUML 5 XPD XML projects"

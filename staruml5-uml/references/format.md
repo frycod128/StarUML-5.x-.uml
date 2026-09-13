@@ -1,0 +1,256 @@
+# StarUML 5 XPD format reference
+
+Everything here was confirmed against StarUML 5.0.2 and the projects it ships in
+`<install>\samples`. Keep new output inside this vocabulary.
+
+## 1. Document skeleton
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<XPD:PROJECT xmlns:XPD="http://www.staruml.com" version="1">
+<XPD:HEADER>
+<XPD:SUBUNITS>
+</XPD:SUBUNITS>
+<XPD:PROFILES>
+<XPD:PROFILE>UMLStandard</XPD:PROFILE>
+</XPD:PROFILES>
+</XPD:HEADER>
+<XPD:BODY>
+<XPD:OBJ name="DocumentElement" type="UMLProject" guid="CCCCCCCCCCCCCCCCCCCCCCAA">
+<XPD:ATTR name="Documentation" type="string">…</XPD:ATTR>
+<XPD:ATTR name="Title" type="string">Project title</XPD:ATTR>
+<XPD:ATTR name="Author" type="string"></XPD:ATTR>
+<XPD:ATTR name="Company" type="string"></XPD:ATTR>
+<XPD:ATTR name="Copyright" type="string"></XPD:ATTR>
+<XPD:ATTR name="#OwnedElements" type="integer">1</XPD:ATTR>
+<XPD:OBJ name="OwnedElements[0]" type="UMLModel" guid="…">
+<XPD:ATTR name="Name" type="string">…</XPD:ATTR>
+<XPD:REF name="Namespace">CCCCCCCCCCCCCCCCCCCCCCAA</XPD:REF>
+<XPD:ATTR name="#OwnedDiagrams" type="integer">1</XPD:ATTR>
+<XPD:OBJ name="OwnedDiagrams[0]" type="UMLClassDiagram" guid="…">
+<XPD:ATTR name="Name" type="string">…</XPD:ATTR>
+<XPD:ATTR name="DefaultDiagram" type="boolean">True</XPD:ATTR>
+<XPD:REF name="DiagramOwner">…model guid…</XPD:REF>
+<XPD:OBJ name="DiagramView" type="UMLClassDiagramView" guid="…">
+<XPD:REF name="Diagram">…diagram guid…</XPD:REF>
+<XPD:ATTR name="#OwnedViews" type="integer">N</XPD:ATTR>
+<XPD:OBJ name="OwnedViews[0]" type="UMLClassView" guid="…"> … </XPD:OBJ>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:ATTR name="#OwnedElements" type="integer">M</XPD:ATTR>
+<XPD:OBJ name="OwnedElements[0]" type="UMLClass" guid="…"> … </XPD:OBJ>
+</XPD:OBJ>
+</XPD:OBJ>
+</XPD:BODY>
+</XPD:PROJECT>
+```
+
+Notes
+
+- Order of `ATTR`/`REF`/`OBJ` children is forgiving, but the collection counter
+  `#Field` must still sit next to its collection and match its size.
+- `Type="boolean"` values are `True`/`False`; integers are plain digits; enums are literals.
+- Views and model elements are separate trees: a view points at its model element with
+  `<XPD:REF name="Model">`, and the element lists the views back through `Views[i]`.
+
+## 2. Namespaces and diagrams
+
+| Element | Fields that matter |
+| --- | --- |
+| `UMLProject` | `Documentation`, `Title`, `Author`, `Company`, `Copyright`, `OwnedElements[]` |
+| `UMLModel` / `UMLPackage` | `Name`, `Namespace` (REF), `OwnedDiagrams[]`, `OwnedElements[]` |
+| `<Kind>Diagram` (`UMLUseCaseDiagram`, `UMLClassDiagram`, `UMLActivityDiagram`, `UMLStatechartDiagram`, …) | `Name`, `DefaultDiagram` (boolean), `DiagramOwner` (REF), child `DiagramView` |
+| `<Kind>DiagramView` | `Diagram` (REF), `OwnedViews[]` |
+
+The diagram is owned by whatever the user drew it in: a package/model
+(`OwnedDiagrams` + `DiagramOwner` = that namespace) or a state machine
+(`OwnedDiagrams` + `DiagramOwner` = the `UMLActivityGraph`/`UMLStateMachine`).
+
+## 3. Use case diagram
+
+Model elements
+
+```xml
+<XPD:OBJ name="OwnedElements[0]" type="UMLActor" guid="…">
+<XPD:ATTR name="Name" type="string">读者</XPD:ATTR>
+<XPD:REF name="Namespace">…model…</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
+<XPD:REF name="Views[0]">…actor view…</XPD:REF>
+<XPD:ATTR name="#Associations" type="integer">1</XPD:ATTR>
+<XPD:REF name="Associations[0]">…UMLAssociationEnd guid…</XPD:REF>
+</XPD:OBJ>
+
+<XPD:OBJ name="OwnedElements[1]" type="UMLUseCase" guid="…">   <!-- Name, Namespace, #Views, #Associations -->
+
+<XPD:OBJ name="OwnedElements[2]" type="UMLAssociation" guid="…">
+<XPD:REF name="Namespace">…model…</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>            <!-- association view + 3 labels -->
+<XPD:ATTR name="#Connections" type="integer">2</XPD:ATTR>
+<XPD:OBJ name="Connections[0]" type="UMLAssociationEnd" guid="…">   <!-- Connections[0] = TAIL end -->
+<XPD:ATTR name="Multiplicity" type="string">1</XPD:ATTR>            <!-- optional -->
+<XPD:ATTR name="IsNavigable" type="boolean">True</XPD:ATTR>         <!-- optional; True draws the arrow -->
+<XPD:REF name="Association">…association…</XPD:REF>
+<XPD:REF name="Participant">…actor or use case…</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>                 <!-- Head/Tail RoleName, Multiplicity, Property, Qualifier -->
+</XPD:OBJ>
+<XPD:OBJ name="Connections[1]" type="UMLAssociationEnd" guid="…">   <!-- Connections[1] = HEAD end -->
+</XPD:OBJ>
+
+<XPD:OBJ name="OwnedElements[3]" type="UMLInclude" guid="…">
+<XPD:REF name="Namespace">…model…</XPD:REF>
+<XPD:REF name="Addition">…included use case…</XPD:REF>   <!-- target -->
+<XPD:REF name="Base">…including use case…</XPD:REF>      <!-- source -->
+</XPD:OBJ>
+```
+
+Views
+
+| View | Children besides `Left/Top/Width/Height` + `Model` |
+| --- | --- |
+| `UMLActorView` | `NameCompartment` (`NameLabel` with `FontStyle` 1 and `Text`, `StereotypeLabel` `Visible=False`, `PropertyLabel` `Visible=False`), `AttributeCompartment` (`Visible=False` + `Model`), `OperationCompartment` (`Visible=False` + `Model`) |
+| `UMLUseCaseView` | same as actor plus `ExtensionPointCompartment` (`Visible=False`) |
+| `UMLAssociationView` | `Points`, `Head` (head view), `Tail` (tail view), `NameLabel`, `StereotypeLabel`, `PropertyLabel`, `HeadRoleNameLabel`, `TailRoleNameLabel`, `HeadMultiplicityLabel`, `TailMultiplicityLabel`, `HeadPropertyLabel`, `TailPropertyLabel`, `HeadQualifierCompartment`, `TailQualifierCompartment` |
+| `UMLIncludeView` | `Points`, `Head`, `Tail`, `NameLabel`, `StereotypeLabel` (text `<<include>>`), `PropertyLabel` |
+
+Label rules: the three main edge labels reference the relationship through `Model`;
+each end-specific label references its `UMLAssociationEnd` guid and carries
+`EdgePosition` = `epHead` / `epTail`. Hidden labels are still emitted with
+`<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>`.
+
+## 4. Class diagram
+
+Model elements
+
+```xml
+<XPD:OBJ name="OwnedElements[0]" type="UMLClass" guid="…">
+<XPD:ATTR name="Name" type="string">Book</XPD:ATTR>
+<XPD:REF name="Namespace">…model…</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>          <!-- class view + 3 compartments -->
+<XPD:ATTR name="#Attributes" type="integer">5</XPD:ATTR>
+<XPD:OBJ name="Attributes[0]" type="UMLAttribute" guid="…">
+<XPD:ATTR name="Name" type="string">bookId</XPD:ATTR>
+<XPD:ATTR name="Visibility" type="UMLVisibilityKind">vkPublic</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">Integer</XPD:ATTR>
+<XPD:REF name="Owner">…class…</XPD:REF>
+</XPD:OBJ>
+<XPD:ATTR name="#Operations" type="integer">2</XPD:ATTR>
+<XPD:OBJ name="Operations[0]" type="UMLOperation" guid="…">
+<XPD:ATTR name="Name" type="string">borrowBook</XPD:ATTR>
+<XPD:REF name="Owner">…class…</XPD:REF>
+<XPD:ATTR name="#Parameters" type="integer">2</XPD:ATTR>
+<XPD:OBJ name="Parameters[0]" type="UMLParameter" guid="…">   <!-- input parameter -->
+<XPD:ATTR name="Name" type="string">book</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">Book</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">…operation…</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Parameters[1]" type="UMLParameter" guid="…">   <!-- return type lives in a pdkReturn parameter, no Name -->
+<XPD:ATTR name="DirectionKind" type="UMLParameterDirectionKind">pdkReturn</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">Boolean</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">…operation…</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:ATTR name="#Associations" type="integer">1</XPD:ATTR>
+<XPD:REF name="Associations[0]">…UMLAssociationEnd guid…</XPD:REF>
+</XPD:OBJ>
+```
+
+Views: `UMLClassView` = `Left/Top/Width/Height`, `Model`, `NameCompartment`
+(+ `NameLabel`/`StereotypeLabel`/`PropertyLabel`), `AttributeCompartment` (+ `Model`),
+`OperationCompartment` (+ `Model`), `TemplateParameterCompartment`
+(`Visible=False` + `Model`). Do **not** emit attribute/operation row views — the app
+rebuilds them from `Attributes`/`Operations` when it draws.
+
+Association view: identical shape to the use case one, including multiplicity labels
+(`HeadMultiplicityLabel`/`TailMultiplicityLabel` with `Text` such as `1`, `*`) and
+`IsNavigable` on the end that should show an arrow.
+
+## 5. Activity diagram (UML 1.4 names)
+
+Content hangs off an activity graph, which is an owned element of the namespace:
+
+```xml
+<XPD:OBJ name="OwnedElements[0]" type="UMLActivityGraph" guid="…">
+<XPD:ATTR name="Name" type="string">借书流程</XPD:ATTR>
+<XPD:REF name="Namespace">…model…</XPD:REF>
+<XPD:OBJ name="Top" type="UMLCompositeState" guid="…">
+<XPD:ATTR name="Name" type="string">TOP</XPD:ATTR>
+<XPD:REF name="StateMachine">…activity graph…</XPD:REF>
+<XPD:ATTR name="#Subvertices" type="integer">11</XPD:ATTR>
+<XPD:OBJ name="Subvertices[0]" type="UMLActionState" guid="…">
+<XPD:ATTR name="Name" type="string">扫描图书条码</XPD:ATTR>
+<XPD:REF name="ContainerState">…Top…</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">2</XPD:ATTR>
+<XPD:ATTR name="#Outgoings" type="integer">1</XPD:ATTR>
+<XPD:ATTR name="#Incomings" type="integer">1</XPD:ATTR>
+</XPD:OBJ>
+<XPD:OBJ name="Subvertices[1]" type="UMLPseudostate" guid="…">      <!-- initial / decision -->
+<XPD:ATTR name="PseudostateKind" type="UMLPseudostateKind">pkInitial</XPD:ATTR>   <!-- or pkDecision -->
+<XPD:REF name="ContainerState">…Top…</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Subvertices[2]" type="UMLFinalState" guid="…">       <!-- the bull's-eye -->
+<XPD:REF name="ContainerState">…Top…</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:ATTR name="#Transitions" type="integer">12</XPD:ATTR>          <!-- owned by the GRAPH, not by Top -->
+<XPD:OBJ name="Transitions[0]" type="UMLTransition" guid="…">
+<XPD:REF name="StateMachine">…activity graph…</XPD:REF>
+<XPD:REF name="Source">…source node…</XPD:REF>
+<XPD:REF name="Target">…target node…</XPD:REF>
+<XPD:ATTR name="GuardCondition" type="string">[有效]</XPD:ATTR>      <!-- what the user types in Guard -->
+</XPD:OBJ>
+<XPD:ATTR name="#OwnedDiagrams" type="integer">1</XPD:ATTR>
+<XPD:OBJ name="OwnedDiagrams[0]" type="UMLActivityDiagram" guid="…">
+<XPD:ATTR name="Name" type="string">借书流程活动图</XPD:ATTR>
+<XPD:ATTR name="DefaultDiagram" type="boolean">True</XPD:ATTR>
+<XPD:REF name="DiagramOwner">…activity graph…</XPD:REF>
+<XPD:OBJ name="DiagramView" type="UMLActivityDiagramView" guid="…"> … </XPD:OBJ>
+</XPD:OBJ>
+</XPD:OBJ>
+```
+
+Views per node kind
+
+| Element | View type | Stored children |
+| --- | --- | --- |
+| `UMLActionState` | `UMLActionStateView` | `NameCompartment` (`NameLabel` `FontStyle=1` + `Text`, hidden stereotype/property labels) |
+| `UMLPseudostate` | `UMLPseudostateView` | none — only `Left/Top/Width/Height` + `Model` |
+| `UMLFinalState` | `UMLFinalStateView` | none |
+| `UMLTransition` | `UMLTransitionView` | `LineStyle`, `Points`, `Model`, `Head`, `Tail`, `NameLabel` (guard text), `StereotypeLabel`, `PropertyLabel` |
+
+Samples of the same shape: statechart diagrams in
+`samples\Satellite Operation System.uml` use `UMLStateMachine` → `Top` →
+`Subvertices`/`Transitions` with `UMLStateView`/`UMLPseudostateView`/`UMLTransitionView`.
+`UMLStateView` additionally stores `InternalTransitionCompartment`.
+
+## 6. Geometry
+
+- `Points` is `"x1,y1;x2,y2[;…]"` in absolute canvas coordinates (origin top-left).
+  The first point belongs to the `Tail` view, the last to the `Head` view.
+- Straight edges: `LineStyle` `lsOblique` with two points. Routed edges:
+  `lsRectilinear` with the corner points spelled out (e.g. `140,380;140,695;370,695`).
+- Endpoints should sit on the shape border: rectangles via line/rect intersection,
+  ellipses via the ellipse equation. For actor figures clip to the upper part of the
+  view rectangle so the line meets the figure, not the name label.
+- Named elements (e.g. `多对多`) put the text in the model element's `Name`; the
+  association view's `NameLabel` shows it, so leave that label visible.
+- Edge label placement is computed by the app: a label view stores `Alpha` and
+  `Distance`, and the offset from the middle of its segment is
+  `(distance·cos(th+alpha), −distance·sin(th+alpha))` where `th` is the angle of
+  `tailPoint − headPoint` (see the sample values). For a downward edge
+  `Alpha = 1.5707963267949` puts the text to the right of the line, `-1.5707963267949`
+  to the left; `Distance` 15/25/30/40 are the usual insets.
+- Give every node a size that fits its longest line of text: class/action boxes need
+  roughly `7 px × characters` plus padding, use-case ellipses about `10 px × characters`.
+
+## 7. Failure catalogue
+
+| Symptom in StarUML | Cause |
+| --- | --- |
+| 无法打开模型文件。文件格式无效 modal, nothing loads | File is not XPD XML (typically StarUML 6 JSON, or PlantUML/XMI) |
+| File opens, but elements are missing from the explorer/diagram | Dangling GUID reference, or a type name that does not exist in the 5.x metamodel |
+| Class/action box renders empty | `NameCompartment`+`NameLabel` missing, or `Model` ref missing on the view |
+| Lines not shown / arrows attached nowhere | `Head`/`Tail` point at model GUIDs instead of view GUIDs, or `Points` missing |
+| Multiplicity/guard text missing | `Multiplicity`/`GuardCondition` not set on the model element (the app re-renders label text) |
+| Transitions ignored in an activity/statechart diagram | `Transitions` emitted inside `Top` instead of the state machine |
+| Duplicate/ghost shapes | Missing inverse collections (`Views`, `Associations`, `Outgoings`, `Incomings`) or counters that disagree with the actual child count |
+| Chinese text garbled | File not UTF-8 (write UTF-8 without BOM; escape `&`, `<`, `>`) |
