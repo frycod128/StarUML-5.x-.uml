@@ -8,16 +8,28 @@ Hard failures (exit 1):
   * duplicate GUIDs
   * references to GUIDs that do not exist
   * a '#Field' counter that disagrees with the collection it counts
+  * 'Points' that are not integer pairs (StarUML rejects decimals: "'291.13' is
+    not a valid integer value")
+  * boolean values that are not True/False
+  * 'UMLAssociationView' without its end-label / qualifier children
+    (StarUML 5 crashes with an access violation when they are missing;
+    PropertyLabel is optional - StarUML's own samples omit it sometimes)
+  * relationships missing their ends (Include Base/Addition, Extend Base/Extension,
+    Generalization Parent/Child, association with != 2 connections)
+  * an edge view whose Head/Tail point at a model element instead of a view
 
 Warnings:
   * types or fields that never appear in StarUML's own sample projects. This is
     expected for diagram kinds the samples do not cover (for example activity
     diagrams) - confirm those names against the metamodel sample, the help file
     or strings inside StarUML.exe before ignoring the warning.
+  * hints about things that still open but look wrong (no DefaultDiagram, a
+    system boundary drawn with UMLSystemBoundaryView, ...)
 """
 
 import argparse
 import os
+import re
 import sys
 import xml.etree.ElementTree as ET
 from collections import Counter, defaultdict
@@ -47,6 +59,159 @@ def load(path):
     return ET.fromstring(Path(path).read_bytes().decode("utf-8-sig"))
 
 
+INTEGER_POINTS = re.compile(r"^-?\d+(,-?\d+)*(;-?\d+(,-?\d+)*)*$")
+
+ASSOCIATION_VIEW_CHILDREN = [
+    "NameLabel",
+    "StereotypeLabel",
+    "HeadRoleNameLabel",
+    "TailRoleNameLabel",
+    "HeadMultiplicityLabel",
+    "TailMultiplicityLabel",
+    "HeadPropertyLabel",
+    "TailPropertyLabel",
+    "HeadQualifierCompartment",
+    "TailQualifierCompartment",
+]
+
+RELATIONSHIP_REFS = {
+    "UMLInclude": ["Base", "Addition"],
+    "UMLExtend": ["Base", "Extension"],
+    "UMLGeneralization": ["Parent", "Child"],
+}
+
+# Present in files that open correctly in a live StarUML 5.0.2 but not in the
+# four projects shipped with the installer, so the vocabulary diff would nag.
+VERIFIED_VOCABULARY = {
+    "type UMLSubsystem",
+    "type UMLSubsystemView",
+    "type UMLSystemBoundaryView",
+    "UMLUseCaseDiagram.attrs:DefaultDiagram",
+}
+
+
+def attr_value(obj, name):
+    for child in obj:
+        if tag(child) == "ATTR" and field_of(child.get("name")) == name:
+            return (child.text or "").strip()
+    return None
+
+
+def ref_targets(obj, name):
+    return [
+        (child.text or "").strip()
+        for child in obj
+        if tag(child) == "REF" and field_of(child.get("name")) == name
+    ]
+
+
+def child_names(obj):
+    return [field_of(child.get("name")) for child in obj if tag(child) == "OBJ"]
+
+
+def check_semantics(objects):
+    """Checks that XML well-formedness cannot catch but StarUML will choke on."""
+    problems = []
+    hints = []
+    by_guid = {obj.get("guid"): obj for obj in objects}
+    view_guids = {
+        guid for guid, obj in by_guid.items()
+        if (obj.get("type") or "").endswith("View")
+    }
+
+    for obj in objects:
+        otype = obj.get("type") or ""
+
+        for child in obj:
+            if tag(child) != "ATTR":
+                continue
+            name = field_of(child.get("name"))
+            value = (child.text or "").strip()
+            attr_type = (child.get("type") or "").strip()
+            if not re.match(r"^[A-Za-z][A-Za-z0-9]*$", attr_type):
+                problems.append(
+                    f"{otype}.{name}: attribute type '{attr_type}' is not an XPD type name"
+                )
+            if value in ("undefined", "null"):
+                problems.append(
+                    f"{otype}.{name}: attribute value is {value} "
+                    "(a missing value in attr(name, type, value)?)"
+                )
+            if child.get("type") == "Points" and not INTEGER_POINTS.match(value):
+                problems.append(
+                    f"{otype}: {name} must be integer pairs like '120,80;340,80' "
+                    f"(round the coordinates), got '{value}'"
+                )
+            if child.get("type") == "boolean" and value not in ("True", "False"):
+                problems.append(
+                    f"{otype}: {name} must be True or False, got '{value}'"
+                )
+
+        if otype == "UMLAssociationView":
+            have = set(child_names(obj))
+            missing = [n for n in ASSOCIATION_VIEW_CHILDREN if n not in have]
+            if missing:
+                problems.append(
+                    "UMLAssociationView is missing " + ", ".join(missing)
+                    + " (StarUML 5 raises an access violation without them)"
+                )
+
+        required_refs = RELATIONSHIP_REFS.get(otype)
+        if required_refs:
+            missing = [n for n in required_refs if not ref_targets(obj, n)]
+            if missing:
+                problems.append(
+                    f"{otype} is missing reference(s): {', '.join(missing)}"
+                )
+
+        if otype == "UMLAssociation":
+            ends = [
+                child for child in obj
+                if tag(child) == "OBJ" and field_of(child.get("name")) == "Connections"
+            ]
+            if len(ends) != 2:
+                problems.append(
+                    f"UMLAssociation must have exactly 2 Connections, found {len(ends)}"
+                )
+            for index, end in enumerate(ends):
+                for required in ("Association", "Participant"):
+                    if not ref_targets(end, required):
+                        problems.append(
+                            f"UMLAssociation.Connections[{index}] is missing {required}"
+                        )
+
+        for edge_field in ("Head", "Tail"):
+            for target in ref_targets(obj, edge_field):
+                if target and target not in view_guids:
+                    target_type = (by_guid.get(target, {}).get("type") or "unknown")
+                    problems.append(
+                        f"{otype}.{edge_field} points at {target_type}, "
+                        "not at a view (use view GUIDs, not model GUIDs)"
+                    )
+
+    defaults = sum(
+        1 for obj in objects
+        if (obj.get("type") or "").endswith("Diagram")
+        and attr_value(obj, "DefaultDiagram") == "True"
+    )
+    diagrams = sum(1 for obj in objects if (obj.get("type") or "").endswith("Diagram"))
+    if diagrams and defaults == 0:
+        hints.append(
+            "no diagram has DefaultDiagram=True - StarUML may open an empty canvas "
+            "until a diagram is double-clicked in the Model Explorer"
+        )
+    elif defaults > 1:
+        hints.append(f"{defaults} diagrams are marked DefaultDiagram=True; keep exactly one")
+
+    if any((obj.get("type") or "") == "UMLSystemBoundaryView" for obj in objects):
+        hints.append(
+            "UMLSystemBoundaryView draws a plain rectangle without its name; "
+            "use UMLSubsystemView when the boundary must show a caption"
+        )
+
+    return problems, hints
+
+
 def validate(path):
     problems = []
     notes = []
@@ -54,7 +219,7 @@ def validate(path):
     try:
         root = load(path)
     except ET.ParseError as exc:
-        return [f"not well-formed XML: {exc}"], [], {}
+        return [f"not well-formed XML: {exc}"], [], {}, []
 
     if tag(root) != "PROJECT":
         problems.append(f"root element is <{root.tag}>, expected <XPD:PROJECT>")
@@ -97,7 +262,10 @@ def validate(path):
 
     counts = Counter(o.get("type") for o in objects)
     notes.append(f"{len(objects)} objects, {len(refs)} references")
-    return problems, notes, counts
+
+    semantic, hints = check_semantics(objects)
+    problems.extend(semantic)
+    return problems, notes, counts, hints
 
 
 def schema(root):
@@ -156,7 +324,7 @@ def main():
     parser.add_argument("--quiet", action="store_true")
     args = parser.parse_args()
 
-    problems, notes, counts = validate(args.file)
+    problems, notes, counts, hints = validate(args.file)
     print(f"checked: {args.file}")
     for note in notes:
         print("  " + note)
@@ -169,6 +337,11 @@ def main():
             print("  - " + problem)
         return 1
     print("XML/GUID/counter checks: OK")
+
+    if hints:
+        print("hints:")
+        for hint in hints:
+            print("  ! " + hint)
 
     if not args.no_samples:
         samples = collect_samples(args.samples)
@@ -183,6 +356,7 @@ def main():
                 for key in ("attrs", "refs", "children"):
                     for field in sorted(fields[key] - theirs[t][key]):
                         unknown.append(f"{t}.{key}:{field}")
+            unknown = [item for item in unknown if item not in VERIFIED_VOCABULARY]
             print(f"vocabulary vs {len(samples)} StarUML sample project(s): "
                   + ("all known" if not unknown else f"{len(unknown)} item(s) to confirm"))
             for item in unknown[:20]:
