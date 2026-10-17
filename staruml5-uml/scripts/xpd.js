@@ -97,6 +97,51 @@ function walk (elem, out = []) {
   return out;
 }
 
+/* ------------------------------------------------------------------- lint */
+
+/** Integer coordinate pairs only: "120,80;340,80". StarUML parses these as integers. */
+const POINTS_RE = /^-?\d+(,-?\d+)*(;-?\d+(,-?\d+)*)*$/;
+
+/**
+ * Catch the two mistakes that cost hours in practice, before anything is written:
+ *   - decimal / NaN coordinates: StarUML shows "'291.13' is not a valid integer value."
+ *   - lowercase booleans: the document loads with no diagram (or drops the attribute)
+ */
+function lint (root) {
+  const problems = [];
+  for (const elem of walk(root)) {
+    for (const a of elem.attrs) {
+      const value = String(a.value);
+      // attr(name, type, value) is easy to call with two arguments by mistake:
+      // that writes the intended value into @type and serializes "undefined".
+      if (!/^[A-Za-z][A-Za-z0-9]*$/.test(String(a.type))) {
+        problems.push(
+          `${elem.type}.${elem.name}: attribute "${a.name}" has type "${a.type}" - ` +
+          'expected an XPD type name such as string/integer/boolean/Points'
+        );
+      }
+      if (value === 'undefined' || value === 'null') {
+        problems.push(
+          `${elem.type}.${elem.name}: attribute "${a.name}" is ${value} - ` +
+          'did you call attr(name, type, value) with the value missing?'
+        );
+      }
+      if (a.type === 'Points' && !POINTS_RE.test(value.trim())) {
+        problems.push(
+          `${elem.type}.${elem.name}: Points must be integer pairs like "120,80;340,80" ` +
+          `(round them), got "${value}"`
+        );
+      }
+      if (a.type === 'boolean' && value !== 'True' && value !== 'False') {
+        problems.push(
+          `${elem.type}.${elem.name}: boolean "${a.name}" must be True or False, got "${value}"`
+        );
+      }
+    }
+  }
+  return problems;
+}
+
 /** Map<collection, Map<elemId, guid[]>> in document order, matching StarUML's own files. */
 function collectInverses (root, inverses) {
   const byCollection = new Map();
@@ -159,6 +204,12 @@ function emit (elem, ctx) {
 
 /** Serialize an XPD element tree into the XML text StarUML 5 writes. */
 function writeProject (root, options = {}) {
+  if (options.lint !== false) {
+    const problems = lint(root);
+    if (problems.length) {
+      throw new Error('XPD lint failed:\n  - ' + problems.join('\n  - '));
+    }
+  }
   const inverses = options.inverses || DEFAULT_INVERSES;
   const ctx = {
     inverses,
@@ -291,6 +342,19 @@ function selfTest () {
   if (!/name="Views\[0\]"/.test(xml)) problems.push('inverse Views collection missing');
   if (!/name="Outgoings\[0\]"/.test(xml)) problems.push('inverse Outgoings collection missing');
 
+  // lint must reject the three mistakes that make StarUML 5 choke
+  for (const [name, type, value] of [
+    ['Points', 'Points', '10.5,20;30,40'],
+    ['Visible', 'boolean', 'false'],
+    ['Title', '图书管理系统用例图', 'x']
+  ]) {
+    const bad = new Elem('DocumentElement', 'UMLProject');
+    bad.attr(name, type, value);
+    let rejected = false;
+    try { writeProject(bad); } catch (err) { rejected = true; }
+    if (!rejected) problems.push(`lint accepted ${name} type=${type} value=${value}`);
+  }
+
   if (problems.length) {
     console.error('SELF-TEST FAILED');
     problems.forEach(p => console.error('  - ' + p));
@@ -304,6 +368,7 @@ module.exports = {
   Elem,
   guid,
   escapeXml,
+  lint,
   writeProject,
   writeFile,
   DEFAULT_ARRAY_FIELDS,
