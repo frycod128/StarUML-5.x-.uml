@@ -19,6 +19,10 @@ Hard failures (exit 1):
     Generalization Parent/Child, association with != 2 connections)
   * an edge view whose Head/Tail point at a model element instead of a view
   * sequence stimulus endpoints that do not target UMLLifeLineView
+  * a sequence stimulus view without UMLActivationView while
+    ShowActivation=True
+  * a sequence message view nested under UMLInteractionOperandView (it can
+    disappear even when the document loads)
   * a nested ContainedViews member without a ContainerView back-reference to
     its actual parent view
   * communication-link or rectilinear-edge segments that are not horizontal or
@@ -32,6 +36,8 @@ Warnings:
   * hints about things that still open but look wrong (no DefaultDiagram, a
     system boundary drawn with UMLSystemBoundaryView, a non-ASCII basename that
     may need an ASCII fallback after NO-DOCUMENT, ...)
+  * non-default View colors are warnings unless
+    --require-standard-palette is supplied
 """
 
 import argparse
@@ -117,6 +123,32 @@ ACTION_TYPES = {
     "UMLSendAction",
 }
 
+INTERACTION_FRAGMENT_TYPES = {
+    "UMLCombinedFragment",
+    "UMLInteractionOperand",
+}
+
+INTERACTION_OPERATORS = {
+    "iokSeq",
+    "iokAlt",
+    "iokOpt",
+    "iokBreak",
+    "iokPar",
+    "iokStrict",
+    "iokLoop",
+    "iokRegion",
+    "iokNeg",
+    "iokAssert",
+    "iokIgnore",
+    "iokConsider",
+}
+
+STANDARD_DIAGRAM_PALETTE = {
+    "LineColor": "$000E0E87",
+    "FillColor": "$00B9FFFF",
+    "FontColor": "$00010000",
+}
+
 # Present in StarUML 5.0.2-created/live-loaded projects (or confirmed from the
 # installed executable) but not in the four projects shipped with the installer.
 VERIFIED_VOCABULARY = {
@@ -166,6 +198,7 @@ VERIFIED_VOCABULARY = {
     "LabelView.attrs:FontColor",
     "LabelView.attrs:FontFace",
     "LabelView.attrs:FontSize",
+    "LabelView.refs:Model",
     "UMLLifeLineView.attrs:LineColor",
     "UMLSeqStimulusView.attrs:FontColor",
     "UMLSeqStimulusView.attrs:FontFace",
@@ -236,6 +269,7 @@ def check_semantics(objects):
     """Checks that XML well-formedness cannot catch but StarUML will choke on."""
     problems = []
     hints = []
+    palette_issues = []
     by_guid = {obj.get("guid"): obj for obj in objects}
     view_guids = {
         guid for guid, obj in by_guid.items()
@@ -243,6 +277,14 @@ def check_semantics(objects):
     }
     for obj in objects:
         otype = obj.get("type") or ""
+
+        if otype.endswith("View"):
+            for name, expected in STANDARD_DIAGRAM_PALETTE.items():
+                actual = attr_value(obj, name)
+                if actual != expected:
+                    palette_issues.append(
+                        f"{otype}.{name} is {actual!r}, expected default {expected}"
+                    )
 
         for child in obj:
             if tag(child) != "ATTR":
@@ -351,6 +393,17 @@ def check_semantics(objects):
                     "UMLInteractionOperandView.GuardLabel does not match its "
                     "UMLInteractionOperand.Guard"
                 )
+            if any(
+                tag(child) == "OBJ"
+                and (child.get("type") or "") == "UMLSeqStimulusView"
+                for child in obj.iter()
+                if child is not obj
+            ):
+                problems.append(
+                    "UMLSeqStimulusView must not be nested under "
+                    "UMLInteractionOperandView; keep it in DiagramView.OwnedViews "
+                    "and place it over the operand with Points"
+                )
 
         endpoint_types = EDGE_ENDPOINT_TYPES.get(otype, {})
         for edge_field, expected_type in endpoint_types.items():
@@ -411,6 +464,12 @@ def check_semantics(objects):
                     )
 
         if otype == "UMLCombinedFragment":
+            operator = attr_value(obj, "InteractionOperator")
+            if operator not in INTERACTION_OPERATORS:
+                problems.append(
+                    f"UMLCombinedFragment.InteractionOperator is {operator!r}; "
+                    "expected one of " + ", ".join(sorted(INTERACTION_OPERATORS))
+                )
             operands = [
                 child for child in obj
                 if tag(child) == "OBJ" and field_of(child.get("name")) == "Operands"
@@ -423,6 +482,44 @@ def check_semantics(objects):
                         "UMLInteractionOperand.CombinedFragment must point back at "
                         "its containing UMLCombinedFragment"
                     )
+
+        if otype == "UMLInteractionOperand":
+            for child in obj:
+                if (
+                    tag(child) == "OBJ"
+                    and field_of(child.get("name")) == "Fragments"
+                    and (child.get("type") or "") not in INTERACTION_FRAGMENT_TYPES
+                ):
+                    problems.append(
+                        "UMLInteractionOperand.Fragments may contain only "
+                        "UMLInteractionFragment subclasses; UMLStimulus belongs "
+                        "to UMLInteractionInstanceSet.ParticipatingStimuli"
+                    )
+
+        if otype == "UMLSequenceDiagram":
+            show_activation = attr_value(obj, "ShowActivation")
+            if show_activation != "False":
+                diagram_views = [
+                    child for child in obj
+                    if tag(child) == "OBJ"
+                    and field_of(child.get("name")) == "DiagramView"
+                ]
+                for diagram_view in diagram_views:
+                    for stimulus_view in diagram_view.iter():
+                        if (stimulus_view.get("type") or "") != "UMLSeqStimulusView":
+                            continue
+                        activation = [
+                            child for child in stimulus_view
+                            if tag(child) == "OBJ"
+                            and field_of(child.get("name")) == "Activation"
+                            and (child.get("type") or "") == "UMLActivationView"
+                        ]
+                        if not activation:
+                            problems.append(
+                                "UMLSeqStimulusView is missing its nested "
+                                "UMLActivationView while ShowActivation=True "
+                                "(StarUML can raise an access violation)"
+                            )
 
         if otype == "UMLLink":
             ends = [
@@ -490,10 +587,10 @@ def check_semantics(objects):
             "use UMLSubsystemView when the boundary must show a caption"
         )
 
-    return problems, hints
+    return problems, hints, palette_issues
 
 
-def validate(path):
+def validate(path, require_standard_palette=False):
     problems = []
     notes = []
 
@@ -553,8 +650,15 @@ def validate(path):
     counts = Counter(o.get("type") for o in objects)
     notes.append(f"{len(objects)} objects, {len(refs)} references")
 
-    semantic, hints = check_semantics(objects)
+    semantic, hints, palette_issues = check_semantics(objects)
     problems.extend(semantic)
+    if require_standard_palette:
+        problems.extend(palette_issues)
+    elif palette_issues:
+        hints.append(
+            f"{len(palette_issues)} view color attribute(s) do not use the default "
+            "palette; rerun with --require-standard-palette to make this fatal"
+        )
     basename = Path(path).name
     if any(ord(char) > 127 for char in basename):
         hints.append(
@@ -618,10 +722,18 @@ def main():
     parser.add_argument("--samples", nargs="*", default=None,
                         help="sample .uml files or directories (StarUML's own projects)")
     parser.add_argument("--no-samples", action="store_true")
+    parser.add_argument(
+        "--require-standard-palette",
+        action="store_true",
+        help="fail unless every View has the default line/fill/text colors",
+    )
     parser.add_argument("--quiet", action="store_true")
     args = parser.parse_args()
 
-    problems, notes, counts, hints = validate(args.file)
+    problems, notes, counts, hints = validate(
+        args.file,
+        require_standard_palette=args.require_standard_palette,
+    )
     print(f"checked: {args.file}")
     for note in notes:
         print("  " + note)
@@ -652,6 +764,8 @@ def main():
                     continue
                 for key in ("attrs", "refs", "children"):
                     for field in sorted(fields[key] - theirs[t][key]):
+                        if key == "attrs" and field in STANDARD_DIAGRAM_PALETTE:
+                            continue
                         unknown.append(f"{t}.{key}:{field}")
             unknown = [item for item in unknown if item not in VERIFIED_VOCABULARY]
             print(f"vocabulary vs {len(samples)} StarUML sample project(s): "

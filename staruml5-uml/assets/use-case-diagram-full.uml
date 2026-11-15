@@ -605,260 +605,458 @@
 <XPD:ATTR name="DefaultDiagram" type="boolean">True</XPD:ATTR>
 <XPD:REF name="DiagramOwner">y6Fq8zmscNHCiWw2ZqGb1IAA</XPD:REF>
 <XPD:OBJ name="DiagramView" type="UMLUseCaseDiagramView" guid="QlU4iAgswZ3C7C8fo/MQhIAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:REF name="Diagram">P0um0GOAIEJxR5As9DzBZ2AA</XPD:REF>
 <XPD:ATTR name="#OwnedViews" type="integer">14</XPD:ATTR>
 <XPD:OBJ name="OwnedViews[0]" type="UMLSubsystemView" guid="p2mrhZ/W1IOllt0ZLccnZXAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">400</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">60</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">320</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">440</XPD:ATTR>
 <XPD:REF name="Model">8cUBVOZnY78rkwRSfs2hl/AA</XPD:REF>
 <XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="fUwt/DvMcoP2HbS5ywUSedAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:OBJ name="NameLabel" type="LabelView" guid="mXztsqpm1yD1UDMG6g/A5WAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="FontStyle" type="integer">1</XPD:ATTR>
 <XPD:ATTR name="Text" type="string">图书管理系统</XPD:ATTR>
 </XPD:OBJ>
 <XPD:OBJ name="StereotypeLabel" type="LabelView" guid="UWQnxDuyi9+9a5mANTJ/IEAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 </XPD:OBJ>
 <XPD:OBJ name="PropertyLabel" type="LabelView" guid="rML5OA2YNeKPGqmwM+CzsNAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 </XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="AttributeCompartment" type="UMLAttributeCompartmentView" guid="YvFeXL8jHSrammagZQ+r3MAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:REF name="Model">8cUBVOZnY78rkwRSfs2hl/AA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="OperationCompartment" type="UMLOperationCompartmentView" guid="wdU4I10v9eIOLEorlQ335wAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:REF name="Model">8cUBVOZnY78rkwRSfs2hl/AA</XPD:REF>
 </XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="OwnedViews[1]" type="UMLUseCaseView" guid="Hw+XeduU3CqrYB33/ioVTuAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">470</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">110</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">180</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">64</XPD:ATTR>
 <XPD:REF name="Model">rmaq0QHqj42oejqazQC2I6AA</XPD:REF>
 <XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="vBXUZMtWnjwlAuTf/3kCV1AA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:OBJ name="NameLabel" type="LabelView" guid="ot/hjfzJQqry9ZBaazF7LIAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="FontStyle" type="integer">1</XPD:ATTR>
 <XPD:ATTR name="Text" type="string">用户管理</XPD:ATTR>
 </XPD:OBJ>
 <XPD:OBJ name="StereotypeLabel" type="LabelView" guid="qxpHuK7kasC3yiVnMThP6yAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 </XPD:OBJ>
 <XPD:OBJ name="PropertyLabel" type="LabelView" guid="DKFj9UBaQ+wVaBu9+Is0j0AA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 </XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="AttributeCompartment" type="UMLAttributeCompartmentView" guid="aJYzHpxnA2Vl9RPKz6jNHkAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:REF name="Model">rmaq0QHqj42oejqazQC2I6AA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="OperationCompartment" type="UMLOperationCompartmentView" guid="bIJCdK2Z8Q43BrlhtUckLbAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:REF name="Model">rmaq0QHqj42oejqazQC2I6AA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="ExtensionPointCompartment" type="UMLExtensionPointCompartmentView" guid="lSD3JK6fLDugeRK6YWDE0+AA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 </XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="OwnedViews[2]" type="UMLUseCaseView" guid="YR4crr0xBK3WJ89xJ0ZqPvAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">470</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">200</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">180</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">64</XPD:ATTR>
 <XPD:REF name="Model">bOC++YJBe0gHZ1jWT7ezGmAA</XPD:REF>
 <XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="pO9Y01E61d7FlRms5zcVj6AA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:OBJ name="NameLabel" type="LabelView" guid="5OAEmp2ebX/mhFtw20ZK2xAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="FontStyle" type="integer">1</XPD:ATTR>
 <XPD:ATTR name="Text" type="string">图书管理</XPD:ATTR>
 </XPD:OBJ>
 <XPD:OBJ name="StereotypeLabel" type="LabelView" guid="e0ViKEvUvrw9Xkj7tG00WcAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 </XPD:OBJ>
 <XPD:OBJ name="PropertyLabel" type="LabelView" guid="ZjCky3I4aO8abxkV/mbg1WAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 </XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="AttributeCompartment" type="UMLAttributeCompartmentView" guid="oyBKJn4/r/DuLxFmkeCwJKAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:REF name="Model">bOC++YJBe0gHZ1jWT7ezGmAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="OperationCompartment" type="UMLOperationCompartmentView" guid="T3cLri5SsiwXhzXSGqAZzyAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:REF name="Model">bOC++YJBe0gHZ1jWT7ezGmAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="ExtensionPointCompartment" type="UMLExtensionPointCompartmentView" guid="YuJ9w/Cckc9rY2M7jKV6QVAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 </XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="OwnedViews[3]" type="UMLUseCaseView" guid="uU47DqZmW+ICPoTxq1ZnXbAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">470</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">290</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">180</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">64</XPD:ATTR>
 <XPD:REF name="Model">ogrLRCXEs6EGHXlNKvqB6tAA</XPD:REF>
 <XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="y3jklQYI6ALkTnStIHOTchAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:OBJ name="NameLabel" type="LabelView" guid="MI/l/2QJYAZWPa3td24gpgAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="FontStyle" type="integer">1</XPD:ATTR>
 <XPD:ATTR name="Text" type="string">借阅管理</XPD:ATTR>
 </XPD:OBJ>
 <XPD:OBJ name="StereotypeLabel" type="LabelView" guid="peDpTsWtwsZtlRfoq46XaCAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 </XPD:OBJ>
 <XPD:OBJ name="PropertyLabel" type="LabelView" guid="CBEF/WosRvQCBEJi5Vxw1KAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 </XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="AttributeCompartment" type="UMLAttributeCompartmentView" guid="elVkfWN+Vb5LOv5vamHUhKAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:REF name="Model">ogrLRCXEs6EGHXlNKvqB6tAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="OperationCompartment" type="UMLOperationCompartmentView" guid="Y/DDebrw8Kq4GnTb+xmy3XAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:REF name="Model">ogrLRCXEs6EGHXlNKvqB6tAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="ExtensionPointCompartment" type="UMLExtensionPointCompartmentView" guid="PQpN4GSfRAitNx4OGF4FQMAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 </XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="OwnedViews[4]" type="UMLUseCaseView" guid="CPJRVSIme9cxzZC9Dv2IvHAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">470</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">380</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">180</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">64</XPD:ATTR>
 <XPD:REF name="Model">lEfAGbwnS02W4gd7Xvb5oxAA</XPD:REF>
 <XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="mxqLp+sWuU++n7JeZCwKNCAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:OBJ name="NameLabel" type="LabelView" guid="uZ6/LKGedKhhf4GGxxPG1sAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="FontStyle" type="integer">1</XPD:ATTR>
 <XPD:ATTR name="Text" type="string">系统管理</XPD:ATTR>
 </XPD:OBJ>
 <XPD:OBJ name="StereotypeLabel" type="LabelView" guid="JbLW0sAVOlrNOaIBl7be8DAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 </XPD:OBJ>
 <XPD:OBJ name="PropertyLabel" type="LabelView" guid="4TkjfkyMz9qTnr0KQm9a8UAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 </XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="AttributeCompartment" type="UMLAttributeCompartmentView" guid="i7xN0mJ32bR+D3NnJQt99ZAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:REF name="Model">lEfAGbwnS02W4gd7Xvb5oxAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="OperationCompartment" type="UMLOperationCompartmentView" guid="8nOOEOiRGp9cPmoRGHjSAaAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:REF name="Model">lEfAGbwnS02W4gd7Xvb5oxAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="ExtensionPointCompartment" type="UMLExtensionPointCompartmentView" guid="0pRQFeZ8PMcxGqyipU1kwJAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 </XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="OwnedViews[5]" type="UMLActorView" guid="5an1nkGkYCfC70h0qIUjPNAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">140</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">190</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">70</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">100</XPD:ATTR>
 <XPD:REF name="Model">Twx7lnu35K26vBr/3lN+koAA</XPD:REF>
 <XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="mw5dwhPymo48nT/AKjtKyuAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:OBJ name="NameLabel" type="LabelView" guid="bEposJPM24PhQ/TyBypI7qAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="FontStyle" type="integer">1</XPD:ATTR>
 <XPD:ATTR name="Text" type="string">读者</XPD:ATTR>
 </XPD:OBJ>
 <XPD:OBJ name="StereotypeLabel" type="LabelView" guid="P0QllAgHoRA4sd2y1FK038AA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 </XPD:OBJ>
 <XPD:OBJ name="PropertyLabel" type="LabelView" guid="h/XuIsEb1pMKpwFDUXgk2iAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 </XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="AttributeCompartment" type="UMLAttributeCompartmentView" guid="uKcM8GhXR6H3BffEkiCOifAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:REF name="Model">Twx7lnu35K26vBr/3lN+koAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="OperationCompartment" type="UMLOperationCompartmentView" guid="lYElZ+Z7XUyVRTarIT6U14AA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:REF name="Model">Twx7lnu35K26vBr/3lN+koAA</XPD:REF>
 </XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="OwnedViews[6]" type="UMLActorView" guid="ux2LSfSpLFd8VlHYcDBvMTAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">140</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">340</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">70</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">100</XPD:ATTR>
 <XPD:REF name="Model">8MdIGbdjFe1rihctKNPXTCAA</XPD:REF>
 <XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="CEBFtv8K0mtAvgT7zeNKilAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:OBJ name="NameLabel" type="LabelView" guid="gI+pldoItaA5WuV8dDr+YiAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="FontStyle" type="integer">1</XPD:ATTR>
 <XPD:ATTR name="Text" type="string">图书管理员</XPD:ATTR>
 </XPD:OBJ>
 <XPD:OBJ name="StereotypeLabel" type="LabelView" guid="m2tbK1LgffbdMMOcRT4gTPAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 </XPD:OBJ>
 <XPD:OBJ name="PropertyLabel" type="LabelView" guid="Cq+X1QGbpvmPi/tbWK7iNeAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 </XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="AttributeCompartment" type="UMLAttributeCompartmentView" guid="dWuyqbx4J+Zjjeqngbi8nOAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:REF name="Model">8MdIGbdjFe1rihctKNPXTCAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="OperationCompartment" type="UMLOperationCompartmentView" guid="YleFm023C61vTCcysyt+wAAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:REF name="Model">8MdIGbdjFe1rihctKNPXTCAA</XPD:REF>
 </XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="OwnedViews[7]" type="UMLActorView" guid="QNkm3ghiXS4aqsMvT+jz3jAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">830</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">190</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">70</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">100</XPD:ATTR>
 <XPD:REF name="Model">KixmThxkjCVRX4R8bnjGZ/AA</XPD:REF>
 <XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="XoAreQ8jANheoJjkOM19IzAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:OBJ name="NameLabel" type="LabelView" guid="wEZNa7QC+yDQmd+p67JDv+AA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="FontStyle" type="integer">1</XPD:ATTR>
 <XPD:ATTR name="Text" type="string">系统管理员</XPD:ATTR>
 </XPD:OBJ>
 <XPD:OBJ name="StereotypeLabel" type="LabelView" guid="wOtT3eeO6DBEM2lvqyBn75AA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 </XPD:OBJ>
 <XPD:OBJ name="PropertyLabel" type="LabelView" guid="tNt4/5Xg2iIpNHcsHluEH3AA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 </XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="AttributeCompartment" type="UMLAttributeCompartmentView" guid="/Rss1aFfLNJ54DpB6AzbR/AA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:REF name="Model">KixmThxkjCVRX4R8bnjGZ/AA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="OperationCompartment" type="UMLOperationCompartmentView" guid="6WTvRV0YGVzjSeMOJhTO5rAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:REF name="Model">KixmThxkjCVRX4R8bnjGZ/AA</XPD:REF>
 </XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="OwnedViews[8]" type="UMLAssociationView" guid="Woo6krxF2ql/SuuR3XuX8oAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Points" type="Points">195,216;482,158</XPD:ATTR>
 <XPD:REF name="Model">wt7sk8JHgM9VYjq8DqH4tKAA</XPD:REF>
 <XPD:REF name="Head">Hw+XeduU3CqrYB33/ioVTuAA</XPD:REF>
 <XPD:REF name="Tail">5an1nkGkYCfC70h0qIUjPNAA</XPD:REF>
 <XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="a2JFNj10H2jNYMyq75+3FfAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">1.5707963267949</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
 <XPD:REF name="Model">wt7sk8JHgM9VYjq8DqH4tKAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="StereotypeLabel" type="EdgeLabelView" guid="OUpE+kxXtyPCwXowp/SBt8AA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">1.5707963267949</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
 <XPD:REF name="Model">wt7sk8JHgM9VYjq8DqH4tKAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="PropertyLabel" type="EdgeLabelView" guid="bdUmswaJjqyZcAvfEWkFmEAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">-1.5707963267949</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
 <XPD:REF name="Model">wt7sk8JHgM9VYjq8DqH4tKAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="HeadRoleNameLabel" type="EdgeLabelView" guid="a9pw3K3cJiML6BPo1UblYCAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">-0.523598775598299</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
@@ -866,6 +1064,9 @@
 <XPD:REF name="Model">zLHhtva1VbtabwL5bJOBsgAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="TailRoleNameLabel" type="EdgeLabelView" guid="4B4YiWQOkRu7cNgrXBZ1TSAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">0.523598775598299</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
@@ -873,6 +1074,9 @@
 <XPD:REF name="Model">SBmqU1OM6NvUoUSupJWWBcAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="HeadMultiplicityLabel" type="EdgeLabelView" guid="J45XlalxpIOt6bwN8ZwDQpAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">0.523598775598299</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">25</XPD:ATTR>
@@ -880,6 +1084,9 @@
 <XPD:REF name="Model">zLHhtva1VbtabwL5bJOBsgAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="TailMultiplicityLabel" type="EdgeLabelView" guid="euZs7Y4D4LhxKVkYwMCPbvAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">-0.523598775598299</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">25</XPD:ATTR>
@@ -887,6 +1094,9 @@
 <XPD:REF name="Model">SBmqU1OM6NvUoUSupJWWBcAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="HeadPropertyLabel" type="EdgeLabelView" guid="0b+vIGM1xp50+nzhREAD4lAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">-0.785398163397448</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">40</XPD:ATTR>
@@ -894,6 +1104,9 @@
 <XPD:REF name="Model">zLHhtva1VbtabwL5bJOBsgAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="TailPropertyLabel" type="EdgeLabelView" guid="5mLBYOyAFQ8Ad3tDKdKgOEAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">0.785398163397448</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">40</XPD:ATTR>
@@ -901,6 +1114,9 @@
 <XPD:REF name="Model">SBmqU1OM6NvUoUSupJWWBcAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="HeadQualifierCompartment" type="UMLQualifierCompartmentView" guid="Hu6IUpIAXUZsLuIyuL7jLjAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">0</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">0</XPD:ATTR>
@@ -909,6 +1125,9 @@
 <XPD:REF name="Model">zLHhtva1VbtabwL5bJOBsgAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="TailQualifierCompartment" type="UMLQualifierCompartmentView" guid="I6EJmSJZlvG9ArckGh2Va4AA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">0</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">0</XPD:ATTR>
@@ -918,29 +1137,44 @@
 </XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="OwnedViews[9]" type="UMLAssociationView" guid="DZ3xhqArEh425Ur1GbVXAOAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Points" type="Points">195,225;488,303</XPD:ATTR>
 <XPD:REF name="Model">dNjmgpg3nTwjA+28H3IlhAAA</XPD:REF>
 <XPD:REF name="Head">uU47DqZmW+ICPoTxq1ZnXbAA</XPD:REF>
 <XPD:REF name="Tail">5an1nkGkYCfC70h0qIUjPNAA</XPD:REF>
 <XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="y9g64xQAnQmbLNQj6fn2p+AA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">1.5707963267949</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
 <XPD:REF name="Model">dNjmgpg3nTwjA+28H3IlhAAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="StereotypeLabel" type="EdgeLabelView" guid="imrMCM86z3FGKCRHrUssc0AA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">1.5707963267949</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
 <XPD:REF name="Model">dNjmgpg3nTwjA+28H3IlhAAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="PropertyLabel" type="EdgeLabelView" guid="6KX1oPyUjQ2V7qcp+wL8CaAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">-1.5707963267949</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
 <XPD:REF name="Model">dNjmgpg3nTwjA+28H3IlhAAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="HeadRoleNameLabel" type="EdgeLabelView" guid="6wVWVOVECJbplTx3/SxsKqAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">-0.523598775598299</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
@@ -948,6 +1182,9 @@
 <XPD:REF name="Model">v20jV0qzj9hfKIpwSdiriSAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="TailRoleNameLabel" type="EdgeLabelView" guid="G5rHqB2+DB9Xsyp642/xY5AA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">0.523598775598299</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
@@ -955,6 +1192,9 @@
 <XPD:REF name="Model">aOjG6E8Xm1IRTmzXzWEHk5AA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="HeadMultiplicityLabel" type="EdgeLabelView" guid="pRdFjn8oELI3/SWQwpAceUAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">0.523598775598299</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">25</XPD:ATTR>
@@ -962,6 +1202,9 @@
 <XPD:REF name="Model">v20jV0qzj9hfKIpwSdiriSAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="TailMultiplicityLabel" type="EdgeLabelView" guid="8kJzmbdza1ULrY38OlWSMmAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">-0.523598775598299</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">25</XPD:ATTR>
@@ -969,6 +1212,9 @@
 <XPD:REF name="Model">aOjG6E8Xm1IRTmzXzWEHk5AA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="HeadPropertyLabel" type="EdgeLabelView" guid="i8hF0UtKwxbbZd+MDlWFBPAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">-0.785398163397448</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">40</XPD:ATTR>
@@ -976,6 +1222,9 @@
 <XPD:REF name="Model">v20jV0qzj9hfKIpwSdiriSAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="TailPropertyLabel" type="EdgeLabelView" guid="QaMekFEN4CV2tmmjBZe0fsAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">0.785398163397448</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">40</XPD:ATTR>
@@ -983,6 +1232,9 @@
 <XPD:REF name="Model">aOjG6E8Xm1IRTmzXzWEHk5AA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="HeadQualifierCompartment" type="UMLQualifierCompartmentView" guid="1aMu5R4jqlYVfq4UuowExCAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">0</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">0</XPD:ATTR>
@@ -991,6 +1243,9 @@
 <XPD:REF name="Model">v20jV0qzj9hfKIpwSdiriSAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="TailQualifierCompartment" type="UMLQualifierCompartmentView" guid="JCBh0ViU8Ix2Mx2S8PysOOAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">0</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">0</XPD:ATTR>
@@ -1000,29 +1255,44 @@
 </XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="OwnedViews[10]" type="UMLAssociationView" guid="G5Q0VriwxSWuW+jxEFl4K1AA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Points" type="Points">194,363;497,255</XPD:ATTR>
 <XPD:REF name="Model">+p0LWsPBxfgNdpDQtVEc/VAA</XPD:REF>
 <XPD:REF name="Head">YR4crr0xBK3WJ89xJ0ZqPvAA</XPD:REF>
 <XPD:REF name="Tail">ux2LSfSpLFd8VlHYcDBvMTAA</XPD:REF>
 <XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="5LsiGtcFYonch+VxA6mtYYAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">1.5707963267949</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
 <XPD:REF name="Model">+p0LWsPBxfgNdpDQtVEc/VAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="StereotypeLabel" type="EdgeLabelView" guid="45oNT+SYof53iAEmwmZPvQAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">1.5707963267949</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
 <XPD:REF name="Model">+p0LWsPBxfgNdpDQtVEc/VAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="PropertyLabel" type="EdgeLabelView" guid="dJnMeldn0m26FBPQKEWtr5AA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">-1.5707963267949</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
 <XPD:REF name="Model">+p0LWsPBxfgNdpDQtVEc/VAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="HeadRoleNameLabel" type="EdgeLabelView" guid="GHJvn19xP4gf5NM/QS4WuYAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">-0.523598775598299</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
@@ -1030,6 +1300,9 @@
 <XPD:REF name="Model">QaP3NEXODvEd0LwyyHnm5XAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="TailRoleNameLabel" type="EdgeLabelView" guid="5fQ5LtmLCH0CUNP4yVwBTEAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">0.523598775598299</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
@@ -1037,6 +1310,9 @@
 <XPD:REF name="Model">So6qXICrTmBv03CkC37Z4DAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="HeadMultiplicityLabel" type="EdgeLabelView" guid="5SLI6stkCDw37NpHmhALYdAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">0.523598775598299</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">25</XPD:ATTR>
@@ -1044,6 +1320,9 @@
 <XPD:REF name="Model">QaP3NEXODvEd0LwyyHnm5XAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="TailMultiplicityLabel" type="EdgeLabelView" guid="UfQfcf1palPO3cvCFsc3+OAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">-0.523598775598299</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">25</XPD:ATTR>
@@ -1051,6 +1330,9 @@
 <XPD:REF name="Model">So6qXICrTmBv03CkC37Z4DAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="HeadPropertyLabel" type="EdgeLabelView" guid="X3kO96YtZNwkoJgG/zMqLgAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">-0.785398163397448</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">40</XPD:ATTR>
@@ -1058,6 +1340,9 @@
 <XPD:REF name="Model">QaP3NEXODvEd0LwyyHnm5XAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="TailPropertyLabel" type="EdgeLabelView" guid="eMB6lLICqezP8fRWgxAOyZAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">0.785398163397448</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">40</XPD:ATTR>
@@ -1065,6 +1350,9 @@
 <XPD:REF name="Model">So6qXICrTmBv03CkC37Z4DAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="HeadQualifierCompartment" type="UMLQualifierCompartmentView" guid="gjFIoeVtvXVimIkuApxnr/AA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">0</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">0</XPD:ATTR>
@@ -1073,6 +1361,9 @@
 <XPD:REF name="Model">QaP3NEXODvEd0LwyyHnm5XAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="TailQualifierCompartment" type="UMLQualifierCompartmentView" guid="DZ72jgQRItsuVVPofVvSneAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">0</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">0</XPD:ATTR>
@@ -1082,29 +1373,44 @@
 </XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="OwnedViews[11]" type="UMLAssociationView" guid="Xi6YK4Mmn0MYFX+3f605aEAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Points" type="Points">195,368;475,333</XPD:ATTR>
 <XPD:REF name="Model">PHtkAiVZJvTtI7IsGdUmBoAA</XPD:REF>
 <XPD:REF name="Head">uU47DqZmW+ICPoTxq1ZnXbAA</XPD:REF>
 <XPD:REF name="Tail">ux2LSfSpLFd8VlHYcDBvMTAA</XPD:REF>
 <XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="YWJaYbSm4fkM85mpeOSJspAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">1.5707963267949</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
 <XPD:REF name="Model">PHtkAiVZJvTtI7IsGdUmBoAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="StereotypeLabel" type="EdgeLabelView" guid="Nhkk94u7cHiTmZr3sil0oGAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">1.5707963267949</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
 <XPD:REF name="Model">PHtkAiVZJvTtI7IsGdUmBoAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="PropertyLabel" type="EdgeLabelView" guid="qxba+J2m8knnreZRecf2C3AA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">-1.5707963267949</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
 <XPD:REF name="Model">PHtkAiVZJvTtI7IsGdUmBoAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="HeadRoleNameLabel" type="EdgeLabelView" guid="IWpk6szU5W7gIvU8jN9+B3AA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">-0.523598775598299</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
@@ -1112,6 +1418,9 @@
 <XPD:REF name="Model">B8X/VT7e7DDj3HrRnvEmKTAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="TailRoleNameLabel" type="EdgeLabelView" guid="PWjBBj5XMZ/wsKusAF2hCtAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">0.523598775598299</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
@@ -1119,6 +1428,9 @@
 <XPD:REF name="Model">etQjKUd/nn2p1f2s23i6NTAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="HeadMultiplicityLabel" type="EdgeLabelView" guid="0V8gZcSM38/FDL4cVemJy9AA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">0.523598775598299</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">25</XPD:ATTR>
@@ -1126,6 +1438,9 @@
 <XPD:REF name="Model">B8X/VT7e7DDj3HrRnvEmKTAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="TailMultiplicityLabel" type="EdgeLabelView" guid="c3IlMuNtFc2gsrmdQxsFSDAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">-0.523598775598299</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">25</XPD:ATTR>
@@ -1133,6 +1448,9 @@
 <XPD:REF name="Model">etQjKUd/nn2p1f2s23i6NTAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="HeadPropertyLabel" type="EdgeLabelView" guid="oe4JNYz74/gcjnnfj3pqnrAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">-0.785398163397448</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">40</XPD:ATTR>
@@ -1140,6 +1458,9 @@
 <XPD:REF name="Model">B8X/VT7e7DDj3HrRnvEmKTAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="TailPropertyLabel" type="EdgeLabelView" guid="FlYYUWvbx0tgd/ppMrEgELAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">0.785398163397448</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">40</XPD:ATTR>
@@ -1147,6 +1468,9 @@
 <XPD:REF name="Model">etQjKUd/nn2p1f2s23i6NTAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="HeadQualifierCompartment" type="UMLQualifierCompartmentView" guid="Kn3/uqWq/fHVV5nec9EvdsAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">0</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">0</XPD:ATTR>
@@ -1155,6 +1479,9 @@
 <XPD:REF name="Model">B8X/VT7e7DDj3HrRnvEmKTAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="TailQualifierCompartment" type="UMLQualifierCompartmentView" guid="WWO5y6Iuj9dCifuHsiWAUSAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">0</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">0</XPD:ATTR>
@@ -1164,29 +1491,44 @@
 </XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="OwnedViews[12]" type="UMLAssociationView" guid="L0+vwywutn1N36ugjCgHB4AA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Points" type="Points">845,215;633,161</XPD:ATTR>
 <XPD:REF name="Model">oSzm9mKDH8z46i3L7AVrKdAA</XPD:REF>
 <XPD:REF name="Head">Hw+XeduU3CqrYB33/ioVTuAA</XPD:REF>
 <XPD:REF name="Tail">QNkm3ghiXS4aqsMvT+jz3jAA</XPD:REF>
 <XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="tbDg402a67RX/78AMnPgTeAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">1.5707963267949</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
 <XPD:REF name="Model">oSzm9mKDH8z46i3L7AVrKdAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="StereotypeLabel" type="EdgeLabelView" guid="Wn8KKRk9TDWV02NkCY+8oWAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">1.5707963267949</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
 <XPD:REF name="Model">oSzm9mKDH8z46i3L7AVrKdAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="PropertyLabel" type="EdgeLabelView" guid="O9tX9qIN0lTOurkoEJ/I2PAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">-1.5707963267949</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
 <XPD:REF name="Model">oSzm9mKDH8z46i3L7AVrKdAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="HeadRoleNameLabel" type="EdgeLabelView" guid="DuRelKiB6Oyqs5M6Pug4IgAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">-0.523598775598299</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
@@ -1194,6 +1536,9 @@
 <XPD:REF name="Model">bJwQ2F6uD1KwiR32UOzKDEAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="TailRoleNameLabel" type="EdgeLabelView" guid="EDR/mw5FJUDytVg7/9MWNZAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">0.523598775598299</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
@@ -1201,6 +1546,9 @@
 <XPD:REF name="Model">xvaFk4xTurmrfZuja/UsIMAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="HeadMultiplicityLabel" type="EdgeLabelView" guid="1bhQhPwMR+5XkHewr9l/4aAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">0.523598775598299</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">25</XPD:ATTR>
@@ -1208,6 +1556,9 @@
 <XPD:REF name="Model">bJwQ2F6uD1KwiR32UOzKDEAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="TailMultiplicityLabel" type="EdgeLabelView" guid="uv4AKpljQcPR3MiLGOezJPAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">-0.523598775598299</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">25</XPD:ATTR>
@@ -1215,6 +1566,9 @@
 <XPD:REF name="Model">xvaFk4xTurmrfZuja/UsIMAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="HeadPropertyLabel" type="EdgeLabelView" guid="FHp0+ZrkH0g7czpQFoHCumAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">-0.785398163397448</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">40</XPD:ATTR>
@@ -1222,6 +1576,9 @@
 <XPD:REF name="Model">bJwQ2F6uD1KwiR32UOzKDEAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="TailPropertyLabel" type="EdgeLabelView" guid="Vpd52XOcIOFcxSOu3J7VapAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">0.785398163397448</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">40</XPD:ATTR>
@@ -1229,6 +1586,9 @@
 <XPD:REF name="Model">xvaFk4xTurmrfZuja/UsIMAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="HeadQualifierCompartment" type="UMLQualifierCompartmentView" guid="HO+oTACWfrCYi8/dTrl49DAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">0</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">0</XPD:ATTR>
@@ -1237,6 +1597,9 @@
 <XPD:REF name="Model">bJwQ2F6uD1KwiR32UOzKDEAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="TailQualifierCompartment" type="UMLQualifierCompartmentView" guid="5mmNYRlb+S+8WDZ6eyb1BMAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">0</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">0</XPD:ATTR>
@@ -1246,29 +1609,44 @@
 </XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="OwnedViews[13]" type="UMLAssociationView" guid="sedoDMqgWxdI86TFayig78AA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Points" type="Points">847,231;604,384</XPD:ATTR>
 <XPD:REF name="Model">rvZRTkNpUKEehTd5V5iuupAA</XPD:REF>
 <XPD:REF name="Head">CPJRVSIme9cxzZC9Dv2IvHAA</XPD:REF>
 <XPD:REF name="Tail">QNkm3ghiXS4aqsMvT+jz3jAA</XPD:REF>
 <XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="EAyQ/Ye/1rGab98yYr89CoAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">1.5707963267949</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
 <XPD:REF name="Model">rvZRTkNpUKEehTd5V5iuupAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="StereotypeLabel" type="EdgeLabelView" guid="xgA/BWRD4eJOOtM3ea3SwLAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">1.5707963267949</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
 <XPD:REF name="Model">rvZRTkNpUKEehTd5V5iuupAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="PropertyLabel" type="EdgeLabelView" guid="tE8VGcux6ps1t3yLTVQs2AAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">-1.5707963267949</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
 <XPD:REF name="Model">rvZRTkNpUKEehTd5V5iuupAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="HeadRoleNameLabel" type="EdgeLabelView" guid="IsTBOgJHqslLy+Tor8NoWyAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">-0.523598775598299</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
@@ -1276,6 +1654,9 @@
 <XPD:REF name="Model">BFYmmqKVoOx8XPPH/leRoxAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="TailRoleNameLabel" type="EdgeLabelView" guid="7g+f8QLYjZNkTPVTEPG5EVAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">0.523598775598299</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
@@ -1283,6 +1664,9 @@
 <XPD:REF name="Model">lFvjx//f4ekcHfARxpeBWCAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="HeadMultiplicityLabel" type="EdgeLabelView" guid="Nv+i9+BJuXDuooy+EOQXfzAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">0.523598775598299</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">25</XPD:ATTR>
@@ -1290,6 +1674,9 @@
 <XPD:REF name="Model">BFYmmqKVoOx8XPPH/leRoxAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="TailMultiplicityLabel" type="EdgeLabelView" guid="DByiMvvieKhx508TwbL1kgAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">-0.523598775598299</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">25</XPD:ATTR>
@@ -1297,6 +1684,9 @@
 <XPD:REF name="Model">lFvjx//f4ekcHfARxpeBWCAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="HeadPropertyLabel" type="EdgeLabelView" guid="htJffPIFMEB5GK3QCacD0wAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">-0.785398163397448</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">40</XPD:ATTR>
@@ -1304,6 +1694,9 @@
 <XPD:REF name="Model">BFYmmqKVoOx8XPPH/leRoxAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="TailPropertyLabel" type="EdgeLabelView" guid="of8ahrtvP4HxO6qWCxO3q0AA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">0.785398163397448</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">40</XPD:ATTR>
@@ -1311,6 +1704,9 @@
 <XPD:REF name="Model">lFvjx//f4ekcHfARxpeBWCAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="HeadQualifierCompartment" type="UMLQualifierCompartmentView" guid="uJE72XQnfszwfXecCpAMrxAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">0</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">0</XPD:ATTR>
@@ -1319,6 +1715,9 @@
 <XPD:REF name="Model">BFYmmqKVoOx8XPPH/leRoxAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="TailQualifierCompartment" type="UMLQualifierCompartmentView" guid="l8ZqOOqq8Fn+hudGQQL4fXAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">0</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">0</XPD:ATTR>
@@ -1334,323 +1733,572 @@
 <XPD:ATTR name="DefaultDiagram" type="boolean">False</XPD:ATTR>
 <XPD:REF name="DiagramOwner">y6Fq8zmscNHCiWw2ZqGb1IAA</XPD:REF>
 <XPD:OBJ name="DiagramView" type="UMLUseCaseDiagramView" guid="R5kpy006YJnNegdH1DX9U7AA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:REF name="Diagram">kCu28jK7F5Pqim6BDsWS5lAA</XPD:REF>
 <XPD:ATTR name="#OwnedViews" type="integer">19</XPD:ATTR>
 <XPD:OBJ name="OwnedViews[0]" type="UMLSubsystemView" guid="c6YPkKewKBqFKE8SY5roF7AA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">370</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">50</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">530</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">530</XPD:ATTR>
 <XPD:REF name="Model">Vg019nhZTEzIQUFdhgSmCqAA</XPD:REF>
 <XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="goB3PrpSMheB1RWWZTGRkXAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:OBJ name="NameLabel" type="LabelView" guid="TqtpDDeLmBeBSjiDgDdd/7AA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="FontStyle" type="integer">1</XPD:ATTR>
 <XPD:ATTR name="Text" type="string">借阅管理子系统</XPD:ATTR>
 </XPD:OBJ>
 <XPD:OBJ name="StereotypeLabel" type="LabelView" guid="Rtc2FxX/NGrf6p2qOKLAyOAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 </XPD:OBJ>
 <XPD:OBJ name="PropertyLabel" type="LabelView" guid="57pPgziK9rruD3kowOlKy8AA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 </XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="AttributeCompartment" type="UMLAttributeCompartmentView" guid="K1vrhRc64hoAJfnavW682kAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:REF name="Model">Vg019nhZTEzIQUFdhgSmCqAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="OperationCompartment" type="UMLOperationCompartmentView" guid="gBiyX8/BGV3IWPfK1NYX7HAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:REF name="Model">Vg019nhZTEzIQUFdhgSmCqAA</XPD:REF>
 </XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="OwnedViews[1]" type="UMLUseCaseView" guid="U/5ZPPpe2IQ12x3I4ozMtaAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">410</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">100</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">180</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">64</XPD:ATTR>
 <XPD:REF name="Model">W1bT0MW33/FEJavMORhyAqAA</XPD:REF>
 <XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="arUuuLCND/MzyzfnLZrnNiAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:OBJ name="NameLabel" type="LabelView" guid="RlA5N7LHnGNtfTxO1cJyDsAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="FontStyle" type="integer">1</XPD:ATTR>
 <XPD:ATTR name="Text" type="string">借书</XPD:ATTR>
 </XPD:OBJ>
 <XPD:OBJ name="StereotypeLabel" type="LabelView" guid="8MrLOKQGYlV6jrIkpcAU7UAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 </XPD:OBJ>
 <XPD:OBJ name="PropertyLabel" type="LabelView" guid="p/OQvK/cCyN2gqretrh2pXAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 </XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="AttributeCompartment" type="UMLAttributeCompartmentView" guid="0SHBJbEsS0Cf5FViHXOlFEAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:REF name="Model">W1bT0MW33/FEJavMORhyAqAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="OperationCompartment" type="UMLOperationCompartmentView" guid="pvTQwsUBRCTNI86/Lcf6QmAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:REF name="Model">W1bT0MW33/FEJavMORhyAqAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="ExtensionPointCompartment" type="UMLExtensionPointCompartmentView" guid="w1gaXU68ytMc0tvndnm/tfAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 </XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="OwnedViews[2]" type="UMLUseCaseView" guid="IATAh7fcuxlpEeDUF1gRQNAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">410</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">180</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">180</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">64</XPD:ATTR>
 <XPD:REF name="Model">r6EfXcIhAL+YZoxwQwwol8AA</XPD:REF>
 <XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="szu1YyIZ/9jOmYmHWRyqKTAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:OBJ name="NameLabel" type="LabelView" guid="m2Mp+6OQ02S3DjRiZH7NBXAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="FontStyle" type="integer">1</XPD:ATTR>
 <XPD:ATTR name="Text" type="string">还书</XPD:ATTR>
 </XPD:OBJ>
 <XPD:OBJ name="StereotypeLabel" type="LabelView" guid="cfirwwfrUJlfrKsxwQN27jAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 </XPD:OBJ>
 <XPD:OBJ name="PropertyLabel" type="LabelView" guid="AlkmcZNtE3mlXtpZRatqpeAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 </XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="AttributeCompartment" type="UMLAttributeCompartmentView" guid="ymjs6No+7sE/hkA0ygngf8AA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:REF name="Model">r6EfXcIhAL+YZoxwQwwol8AA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="OperationCompartment" type="UMLOperationCompartmentView" guid="OWS8FewsPB6a2QrdYPwSnvAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:REF name="Model">r6EfXcIhAL+YZoxwQwwol8AA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="ExtensionPointCompartment" type="UMLExtensionPointCompartmentView" guid="1iqWe2RfebaO2qtNA7/N5VAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 </XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="OwnedViews[3]" type="UMLUseCaseView" guid="Pcc42efiBFD4s1Bkdu1IgnAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">410</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">260</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">180</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">64</XPD:ATTR>
 <XPD:REF name="Model">o9Meje/SpgOBldgTNV6/ftAA</XPD:REF>
 <XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="D5RwCWKpegsjD+jfDx9pKGAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:OBJ name="NameLabel" type="LabelView" guid="7jmvkFa7eVdmRJkNbkNetrAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="FontStyle" type="integer">1</XPD:ATTR>
 <XPD:ATTR name="Text" type="string">续借</XPD:ATTR>
 </XPD:OBJ>
 <XPD:OBJ name="StereotypeLabel" type="LabelView" guid="8RAlthvbaimjG5fD5/5eNAAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 </XPD:OBJ>
 <XPD:OBJ name="PropertyLabel" type="LabelView" guid="7SrMv7b16e3x4vtc/aHJNmAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 </XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="AttributeCompartment" type="UMLAttributeCompartmentView" guid="KV3Ad0mDoItdGE3hLTm9HrAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:REF name="Model">o9Meje/SpgOBldgTNV6/ftAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="OperationCompartment" type="UMLOperationCompartmentView" guid="8BXvevsl5dAcr3XAqLn5EfAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:REF name="Model">o9Meje/SpgOBldgTNV6/ftAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="ExtensionPointCompartment" type="UMLExtensionPointCompartmentView" guid="Wst118YZqdLJIhA1UIwtW9AA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 </XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="OwnedViews[4]" type="UMLUseCaseView" guid="38KlSnO1IcbgjmWa7yKwcwAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">410</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">340</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">180</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">64</XPD:ATTR>
 <XPD:REF name="Model">j2e1fe5FGtqIJH3qFUGekAAA</XPD:REF>
 <XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="Wa5u660erKH/pOcgq3EVbpAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:OBJ name="NameLabel" type="LabelView" guid="6or0FmKDlBF9DgOrEM1x25AA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="FontStyle" type="integer">1</XPD:ATTR>
 <XPD:ATTR name="Text" type="string">查询借阅记录</XPD:ATTR>
 </XPD:OBJ>
 <XPD:OBJ name="StereotypeLabel" type="LabelView" guid="74QOtvIvMHxVieivzd/7W6AA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 </XPD:OBJ>
 <XPD:OBJ name="PropertyLabel" type="LabelView" guid="D45ux5LVbd5J8M8iactKweAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 </XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="AttributeCompartment" type="UMLAttributeCompartmentView" guid="osmnYREBDe8RuIoGIVwkFZAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:REF name="Model">j2e1fe5FGtqIJH3qFUGekAAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="OperationCompartment" type="UMLOperationCompartmentView" guid="09WXHaMS38ii32P4a8wwvRAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:REF name="Model">j2e1fe5FGtqIJH3qFUGekAAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="ExtensionPointCompartment" type="UMLExtensionPointCompartmentView" guid="fHOCIeesT8iSzp47MnlDStAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 </XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="OwnedViews[5]" type="UMLUseCaseView" guid="QETq/MgzZkuPmgwEYg7b3aAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">680</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">110</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">180</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">64</XPD:ATTR>
 <XPD:REF name="Model">95cqiqDPm/lZ+L9f+nVm/EAA</XPD:REF>
 <XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="XNMxOB/Y/Ba3eRs3QvaDQ4AA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:OBJ name="NameLabel" type="LabelView" guid="fc3szMoCT0AkinIiT9QPvVAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="FontStyle" type="integer">1</XPD:ATTR>
 <XPD:ATTR name="Text" type="string">验证用户身份</XPD:ATTR>
 </XPD:OBJ>
 <XPD:OBJ name="StereotypeLabel" type="LabelView" guid="jDsRUYH54rs2aiNrgBqIsyAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 </XPD:OBJ>
 <XPD:OBJ name="PropertyLabel" type="LabelView" guid="o3BAwZBRg0cVDHQV+5HfdkAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 </XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="AttributeCompartment" type="UMLAttributeCompartmentView" guid="3vyCMEaDF1X2hwl9gcBV0gAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:REF name="Model">95cqiqDPm/lZ+L9f+nVm/EAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="OperationCompartment" type="UMLOperationCompartmentView" guid="7pxCgz5LcQQKxUtbDzH30HAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:REF name="Model">95cqiqDPm/lZ+L9f+nVm/EAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="ExtensionPointCompartment" type="UMLExtensionPointCompartmentView" guid="h5EyUhOMsF4SUsqhs4Y7zOAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 </XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="OwnedViews[6]" type="UMLUseCaseView" guid="hnrlfn3WYbw/7CPa7r6Ds9AA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">680</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">190</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">180</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">64</XPD:ATTR>
 <XPD:REF name="Model">WFNGQMr9DAXGzgh+A9tqdIAA</XPD:REF>
 <XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="6nX08YK13ajnsq+7ngVXVBAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:OBJ name="NameLabel" type="LabelView" guid="DWOqwfb4qH+yL7+hG7n9rSAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="FontStyle" type="integer">1</XPD:ATTR>
 <XPD:ATTR name="Text" type="string">查询库存</XPD:ATTR>
 </XPD:OBJ>
 <XPD:OBJ name="StereotypeLabel" type="LabelView" guid="R+/XxFXAQ1ee88g60IDdNsAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 </XPD:OBJ>
 <XPD:OBJ name="PropertyLabel" type="LabelView" guid="gKoFt8YPSipG5s8K6JiXoQAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 </XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="AttributeCompartment" type="UMLAttributeCompartmentView" guid="XJVp3P+7z3A6y7B3uSCLG+AA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:REF name="Model">WFNGQMr9DAXGzgh+A9tqdIAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="OperationCompartment" type="UMLOperationCompartmentView" guid="4Nr2Zykp6yWYr+ubLG5m9DAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:REF name="Model">WFNGQMr9DAXGzgh+A9tqdIAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="ExtensionPointCompartment" type="UMLExtensionPointCompartmentView" guid="fBznSVFhMQeGtApq73BzLcAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 </XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="OwnedViews[7]" type="UMLUseCaseView" guid="9s+v7G30pqQ14F62SfOgS/AA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">680</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">340</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">180</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">64</XPD:ATTR>
 <XPD:REF name="Model">tsf1VW6yrEZJh7M3plartzAA</XPD:REF>
 <XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="8WAJwqWIiDGoHyiv+SL5leAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:OBJ name="NameLabel" type="LabelView" guid="dQErvSy783v7htPek97Xt/AA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="FontStyle" type="integer">1</XPD:ATTR>
 <XPD:ATTR name="Text" type="string">缴纳罚款</XPD:ATTR>
 </XPD:OBJ>
 <XPD:OBJ name="StereotypeLabel" type="LabelView" guid="R1ii0N6L7Nz2IStRur4Lg/AA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 </XPD:OBJ>
 <XPD:OBJ name="PropertyLabel" type="LabelView" guid="7a/BiCyRn47S0SfmICRhbZAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 </XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="AttributeCompartment" type="UMLAttributeCompartmentView" guid="NfhJwF9yAhLPuVqjVSJIivAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:REF name="Model">tsf1VW6yrEZJh7M3plartzAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="OperationCompartment" type="UMLOperationCompartmentView" guid="4lxD7+RilR8gI4oLlZwJ18AA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:REF name="Model">tsf1VW6yrEZJh7M3plartzAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="ExtensionPointCompartment" type="UMLExtensionPointCompartmentView" guid="kjbtzkmMJ4IIGq6TUXAv4tAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 </XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="OwnedViews[8]" type="UMLActorView" guid="81Z3qioHCLJQ2dUsWIEapvAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">120</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">200</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">70</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">100</XPD:ATTR>
 <XPD:REF name="Model">Twx7lnu35K26vBr/3lN+koAA</XPD:REF>
 <XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="3ENiJ4Rrs+050YjUZKD9jKAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:OBJ name="NameLabel" type="LabelView" guid="OsGrrxcBRGH/Rsir1s/57iAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="FontStyle" type="integer">1</XPD:ATTR>
 <XPD:ATTR name="Text" type="string">读者</XPD:ATTR>
 </XPD:OBJ>
 <XPD:OBJ name="StereotypeLabel" type="LabelView" guid="cvJBSigRKTUpvtp0Dc+AsIAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 </XPD:OBJ>
 <XPD:OBJ name="PropertyLabel" type="LabelView" guid="au90ts9C/uYoLmviLOUJQDAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 </XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="AttributeCompartment" type="UMLAttributeCompartmentView" guid="rGMU7Rb37yOSqrUak7nVSTAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:REF name="Model">Twx7lnu35K26vBr/3lN+koAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="OperationCompartment" type="UMLOperationCompartmentView" guid="8fdBW7EpSsCI+N+W5MROU4AA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:REF name="Model">Twx7lnu35K26vBr/3lN+koAA</XPD:REF>
 </XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="OwnedViews[9]" type="UMLActorView" guid="LlUfc5JdKgW8HAr95aXlmsAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">120</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">430</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">70</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">100</XPD:ATTR>
 <XPD:REF name="Model">8MdIGbdjFe1rihctKNPXTCAA</XPD:REF>
 <XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="92Sts+C3mGWFwd40DobNFEAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:OBJ name="NameLabel" type="LabelView" guid="GeMH6PS9MXYdSIMCeSnFLNAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="FontStyle" type="integer">1</XPD:ATTR>
 <XPD:ATTR name="Text" type="string">图书管理员</XPD:ATTR>
 </XPD:OBJ>
 <XPD:OBJ name="StereotypeLabel" type="LabelView" guid="dieuV78BeN27mUqFEBZjx+AA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 </XPD:OBJ>
 <XPD:OBJ name="PropertyLabel" type="LabelView" guid="jYh698J5+BR9mdPfmZsyqsAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 </XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="AttributeCompartment" type="UMLAttributeCompartmentView" guid="qXWg8Nk5UAOUQNCeshGTYkAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:REF name="Model">8MdIGbdjFe1rihctKNPXTCAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="OperationCompartment" type="UMLOperationCompartmentView" guid="uEBp99rT+GnnT5oYHpbE2GAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:REF name="Model">8MdIGbdjFe1rihctKNPXTCAA</XPD:REF>
 </XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="OwnedViews[10]" type="UMLAssociationView" guid="B1a1TLpLXFTLBWCQa97SGGAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Points" type="Points">175,224;430,152</XPD:ATTR>
 <XPD:REF name="Model">7V4zOO2ERkVWnpXBe2Gm6KAA</XPD:REF>
 <XPD:REF name="Head">U/5ZPPpe2IQ12x3I4ozMtaAA</XPD:REF>
 <XPD:REF name="Tail">81Z3qioHCLJQ2dUsWIEapvAA</XPD:REF>
 <XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="GvxRMQKrizsAw5gIRQ85+MAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">1.5707963267949</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
 <XPD:REF name="Model">7V4zOO2ERkVWnpXBe2Gm6KAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="StereotypeLabel" type="EdgeLabelView" guid="4SRbfu4xc60OvBUJX2fm/MAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">1.5707963267949</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
 <XPD:REF name="Model">7V4zOO2ERkVWnpXBe2Gm6KAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="PropertyLabel" type="EdgeLabelView" guid="tbCO/rQSo5m7aYI1Psr9p8AA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">-1.5707963267949</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
 <XPD:REF name="Model">7V4zOO2ERkVWnpXBe2Gm6KAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="HeadRoleNameLabel" type="EdgeLabelView" guid="4Si5BTYWsmP9YJcwnIUhkQAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">-0.523598775598299</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
@@ -1658,6 +2306,9 @@
 <XPD:REF name="Model">lfQvIlPHPnJ3Mah5UzPgbWAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="TailRoleNameLabel" type="EdgeLabelView" guid="cykx9np1gwjXoeLhMs8DhKAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">0.523598775598299</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
@@ -1665,6 +2316,9 @@
 <XPD:REF name="Model">PRxAVnoqZno55hHIQxJQWAAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="HeadMultiplicityLabel" type="EdgeLabelView" guid="7dnf8pdlsQlkOvl1+HOajdAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">0.523598775598299</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">25</XPD:ATTR>
@@ -1672,6 +2326,9 @@
 <XPD:REF name="Model">lfQvIlPHPnJ3Mah5UzPgbWAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="TailMultiplicityLabel" type="EdgeLabelView" guid="2/ARdCLREomzmCRD1wb5suAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">-0.523598775598299</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">25</XPD:ATTR>
@@ -1679,6 +2336,9 @@
 <XPD:REF name="Model">PRxAVnoqZno55hHIQxJQWAAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="HeadPropertyLabel" type="EdgeLabelView" guid="b/bbszyg9Q25jAnpoOIH0vAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">-0.785398163397448</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">40</XPD:ATTR>
@@ -1686,6 +2346,9 @@
 <XPD:REF name="Model">lfQvIlPHPnJ3Mah5UzPgbWAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="TailPropertyLabel" type="EdgeLabelView" guid="eoY3dkFJtne5qAiTgEy1uNAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">0.785398163397448</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">40</XPD:ATTR>
@@ -1693,6 +2356,9 @@
 <XPD:REF name="Model">PRxAVnoqZno55hHIQxJQWAAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="HeadQualifierCompartment" type="UMLQualifierCompartmentView" guid="ZvtvMjX/dtoad/OA/lEjXWAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">0</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">0</XPD:ATTR>
@@ -1701,6 +2367,9 @@
 <XPD:REF name="Model">lfQvIlPHPnJ3Mah5UzPgbWAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="TailQualifierCompartment" type="UMLQualifierCompartmentView" guid="LBKo2JZ4/5kFAlr+0Ulk0PAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">0</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">0</XPD:ATTR>
@@ -1710,29 +2379,44 @@
 </XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="OwnedViews[11]" type="UMLAssociationView" guid="aZKwOQqD/wNFIfyPvmeLoPAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Points" type="Points">175,229;411,217</XPD:ATTR>
 <XPD:REF name="Model">aaiyVCJMzVbJ3yijrVYTv/AA</XPD:REF>
 <XPD:REF name="Head">IATAh7fcuxlpEeDUF1gRQNAA</XPD:REF>
 <XPD:REF name="Tail">81Z3qioHCLJQ2dUsWIEapvAA</XPD:REF>
 <XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="zgZzAukeZ86j+T9OG0zzdxAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">1.5707963267949</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
 <XPD:REF name="Model">aaiyVCJMzVbJ3yijrVYTv/AA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="StereotypeLabel" type="EdgeLabelView" guid="8c/vH4zQ+ZZbAGxo9SDSZkAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">1.5707963267949</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
 <XPD:REF name="Model">aaiyVCJMzVbJ3yijrVYTv/AA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="PropertyLabel" type="EdgeLabelView" guid="uwN1z/ul+2yFrnmcHmhaDnAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">-1.5707963267949</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
 <XPD:REF name="Model">aaiyVCJMzVbJ3yijrVYTv/AA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="HeadRoleNameLabel" type="EdgeLabelView" guid="fmOD79uqXQ/+1TWBpivfN7AA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">-0.523598775598299</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
@@ -1740,6 +2424,9 @@
 <XPD:REF name="Model">9hndDEuo4rRxEq8cBwXN76AA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="TailRoleNameLabel" type="EdgeLabelView" guid="Pzbi8H38AAKygaNm7IPjazAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">0.523598775598299</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
@@ -1747,6 +2434,9 @@
 <XPD:REF name="Model">4RpNpRteeK2mfFs3GMXYagAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="HeadMultiplicityLabel" type="EdgeLabelView" guid="6H9hwCaimSKQ0atqO+/4mLAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">0.523598775598299</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">25</XPD:ATTR>
@@ -1754,6 +2444,9 @@
 <XPD:REF name="Model">9hndDEuo4rRxEq8cBwXN76AA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="TailMultiplicityLabel" type="EdgeLabelView" guid="qBbJ8b1c0a9JMwL9GokKY7AA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">-0.523598775598299</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">25</XPD:ATTR>
@@ -1761,6 +2454,9 @@
 <XPD:REF name="Model">4RpNpRteeK2mfFs3GMXYagAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="HeadPropertyLabel" type="EdgeLabelView" guid="ekLHIxtoBS0LBTpIwUHscKAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">-0.785398163397448</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">40</XPD:ATTR>
@@ -1768,6 +2464,9 @@
 <XPD:REF name="Model">9hndDEuo4rRxEq8cBwXN76AA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="TailPropertyLabel" type="EdgeLabelView" guid="NYF5GfR51rkX//nOBC2mRRAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">0.785398163397448</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">40</XPD:ATTR>
@@ -1775,6 +2474,9 @@
 <XPD:REF name="Model">4RpNpRteeK2mfFs3GMXYagAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="HeadQualifierCompartment" type="UMLQualifierCompartmentView" guid="tfRd0KTlMskVEec0dCrrFjAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">0</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">0</XPD:ATTR>
@@ -1783,6 +2485,9 @@
 <XPD:REF name="Model">9hndDEuo4rRxEq8cBwXN76AA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="TailQualifierCompartment" type="UMLQualifierCompartmentView" guid="pmEb7/6vWOi2DdbnI3uxPWAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">0</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">0</XPD:ATTR>
@@ -1792,29 +2497,44 @@
 </XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="OwnedViews[12]" type="UMLAssociationView" guid="yMdiKegVxVf0k9n36eEZEeAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Points" type="Points">175,234;420,278</XPD:ATTR>
 <XPD:REF name="Model">L32CZSjGoa4wg8+DEywB8NAA</XPD:REF>
 <XPD:REF name="Head">Pcc42efiBFD4s1Bkdu1IgnAA</XPD:REF>
 <XPD:REF name="Tail">81Z3qioHCLJQ2dUsWIEapvAA</XPD:REF>
 <XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="0qcqGyNQM1WNd8wlcTvj94AA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">1.5707963267949</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
 <XPD:REF name="Model">L32CZSjGoa4wg8+DEywB8NAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="StereotypeLabel" type="EdgeLabelView" guid="JnyF18/gaEnBYJdOZqYUHwAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">1.5707963267949</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
 <XPD:REF name="Model">L32CZSjGoa4wg8+DEywB8NAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="PropertyLabel" type="EdgeLabelView" guid="HSFwVlNIE5qGz8NplmHmhNAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">-1.5707963267949</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
 <XPD:REF name="Model">L32CZSjGoa4wg8+DEywB8NAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="HeadRoleNameLabel" type="EdgeLabelView" guid="uIWiF0YFneE9mKr0mPfKKvAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">-0.523598775598299</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
@@ -1822,6 +2542,9 @@
 <XPD:REF name="Model">NBoyWN2qXc67Y0S+96OHIxAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="TailRoleNameLabel" type="EdgeLabelView" guid="aD+WGPmAeZ7gX3mxOcR+55AA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">0.523598775598299</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
@@ -1829,6 +2552,9 @@
 <XPD:REF name="Model">2FrqVhuwf92KTgHHtWwWVBAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="HeadMultiplicityLabel" type="EdgeLabelView" guid="M0JkADwru5bHVtAOUJ9keVAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">0.523598775598299</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">25</XPD:ATTR>
@@ -1836,6 +2562,9 @@
 <XPD:REF name="Model">NBoyWN2qXc67Y0S+96OHIxAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="TailMultiplicityLabel" type="EdgeLabelView" guid="9ToHxdJcv+bKDuk9aSOTq0AA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">-0.523598775598299</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">25</XPD:ATTR>
@@ -1843,6 +2572,9 @@
 <XPD:REF name="Model">2FrqVhuwf92KTgHHtWwWVBAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="HeadPropertyLabel" type="EdgeLabelView" guid="AignR3gW6otmTE8tVbrj+YAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">-0.785398163397448</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">40</XPD:ATTR>
@@ -1850,6 +2582,9 @@
 <XPD:REF name="Model">NBoyWN2qXc67Y0S+96OHIxAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="TailPropertyLabel" type="EdgeLabelView" guid="Cav1krOm8jg8n+mI4Y16mEAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">0.785398163397448</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">40</XPD:ATTR>
@@ -1857,6 +2592,9 @@
 <XPD:REF name="Model">2FrqVhuwf92KTgHHtWwWVBAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="HeadQualifierCompartment" type="UMLQualifierCompartmentView" guid="CIYbnjJC8GoT73UKuZ84JeAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">0</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">0</XPD:ATTR>
@@ -1865,6 +2603,9 @@
 <XPD:REF name="Model">NBoyWN2qXc67Y0S+96OHIxAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="TailQualifierCompartment" type="UMLQualifierCompartmentView" guid="1W/Be7I4rV3m7cjovtbG1kAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">0</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">0</XPD:ATTR>
@@ -1874,29 +2615,44 @@
 </XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="OwnedViews[13]" type="UMLAssociationView" guid="OjUkdqypYoVaAo0fE6HF8cAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Points" type="Points">174,238;441,348</XPD:ATTR>
 <XPD:REF name="Model">rQ9t8hc6GREzjFI/5SBON0AA</XPD:REF>
 <XPD:REF name="Head">38KlSnO1IcbgjmWa7yKwcwAA</XPD:REF>
 <XPD:REF name="Tail">81Z3qioHCLJQ2dUsWIEapvAA</XPD:REF>
 <XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="1TzU7qgsAs9dIRI/6lzMTvAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">1.5707963267949</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
 <XPD:REF name="Model">rQ9t8hc6GREzjFI/5SBON0AA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="StereotypeLabel" type="EdgeLabelView" guid="hphfLy3EPt4dijKhPd5IUxAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">1.5707963267949</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
 <XPD:REF name="Model">rQ9t8hc6GREzjFI/5SBON0AA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="PropertyLabel" type="EdgeLabelView" guid="VGjD1yUBzDTQLNUTdkIOKfAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">-1.5707963267949</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
 <XPD:REF name="Model">rQ9t8hc6GREzjFI/5SBON0AA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="HeadRoleNameLabel" type="EdgeLabelView" guid="c1uJZlGWigu0u7ExIjDWLFAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">-0.523598775598299</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
@@ -1904,6 +2660,9 @@
 <XPD:REF name="Model">BtsFd/NXc4uyAVq2XXJlNaAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="TailRoleNameLabel" type="EdgeLabelView" guid="KNUhYtfiweqKjK+41JwkH2AA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">0.523598775598299</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
@@ -1911,6 +2670,9 @@
 <XPD:REF name="Model">v0M/3T4s5aEXK8SfJvowbRAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="HeadMultiplicityLabel" type="EdgeLabelView" guid="Ule6Z5loZYAFwRcizNRc0NAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">0.523598775598299</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">25</XPD:ATTR>
@@ -1918,6 +2680,9 @@
 <XPD:REF name="Model">BtsFd/NXc4uyAVq2XXJlNaAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="TailMultiplicityLabel" type="EdgeLabelView" guid="7fDlcnRHcv8T0dud2X9SvSAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">-0.523598775598299</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">25</XPD:ATTR>
@@ -1925,6 +2690,9 @@
 <XPD:REF name="Model">v0M/3T4s5aEXK8SfJvowbRAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="HeadPropertyLabel" type="EdgeLabelView" guid="3hIvM1uy9E+1RMQiRpQv/9AA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">-0.785398163397448</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">40</XPD:ATTR>
@@ -1932,6 +2700,9 @@
 <XPD:REF name="Model">BtsFd/NXc4uyAVq2XXJlNaAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="TailPropertyLabel" type="EdgeLabelView" guid="QcVjxC4EdK7d+0CsM9GoduAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">0.785398163397448</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">40</XPD:ATTR>
@@ -1939,6 +2710,9 @@
 <XPD:REF name="Model">v0M/3T4s5aEXK8SfJvowbRAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="HeadQualifierCompartment" type="UMLQualifierCompartmentView" guid="Sr2j1LpKtbwNUB6/feXyGaAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">0</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">0</XPD:ATTR>
@@ -1947,6 +2721,9 @@
 <XPD:REF name="Model">BtsFd/NXc4uyAVq2XXJlNaAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="TailQualifierCompartment" type="UMLQualifierCompartmentView" guid="Fb6VCV1tpEZCXWjQ6Khj/+AA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">0</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">0</XPD:ATTR>
@@ -1956,29 +2733,44 @@
 </XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="OwnedViews[14]" type="UMLAssociationView" guid="vMbTXvFa9J7keYXZDF5kJxAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Points" type="Points">171,445;468,162</XPD:ATTR>
 <XPD:REF name="Model">WsM6FlhksNuxxyrdJ64Pi3AA</XPD:REF>
 <XPD:REF name="Head">U/5ZPPpe2IQ12x3I4ozMtaAA</XPD:REF>
 <XPD:REF name="Tail">LlUfc5JdKgW8HAr95aXlmsAA</XPD:REF>
 <XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="plfqBOWYqkwS1OEj4GZ2uKAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">1.5707963267949</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
 <XPD:REF name="Model">WsM6FlhksNuxxyrdJ64Pi3AA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="StereotypeLabel" type="EdgeLabelView" guid="8q0J2DI5IDAQh7BV9S9zr6AA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">1.5707963267949</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
 <XPD:REF name="Model">WsM6FlhksNuxxyrdJ64Pi3AA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="PropertyLabel" type="EdgeLabelView" guid="lOYtcTYc7o0lRNZb6Wet+zAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">-1.5707963267949</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
 <XPD:REF name="Model">WsM6FlhksNuxxyrdJ64Pi3AA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="HeadRoleNameLabel" type="EdgeLabelView" guid="2zf8gfnv3sCDWYeVv7J++bAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">-0.523598775598299</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
@@ -1986,6 +2778,9 @@
 <XPD:REF name="Model">huag6bBMOsdK5SSzsIVsvpAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="TailRoleNameLabel" type="EdgeLabelView" guid="92CzILOIbgS0h9yxMLtEe2AA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">0.523598775598299</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
@@ -1993,6 +2788,9 @@
 <XPD:REF name="Model">GPa6wdVClQ37tHxIpg1hzqAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="HeadMultiplicityLabel" type="EdgeLabelView" guid="cFPQa+xN88rIhBb92dSf5gAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">0.523598775598299</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">25</XPD:ATTR>
@@ -2000,6 +2798,9 @@
 <XPD:REF name="Model">huag6bBMOsdK5SSzsIVsvpAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="TailMultiplicityLabel" type="EdgeLabelView" guid="Mg8OHendyhz3ZrQJnBmhpLAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">-0.523598775598299</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">25</XPD:ATTR>
@@ -2007,6 +2808,9 @@
 <XPD:REF name="Model">GPa6wdVClQ37tHxIpg1hzqAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="HeadPropertyLabel" type="EdgeLabelView" guid="cNZOyVNHhkJaWLoSzoCMrYAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">-0.785398163397448</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">40</XPD:ATTR>
@@ -2014,6 +2818,9 @@
 <XPD:REF name="Model">huag6bBMOsdK5SSzsIVsvpAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="TailPropertyLabel" type="EdgeLabelView" guid="/cfjfWa9ijkPp8RGpfbtPCAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">0.785398163397448</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">40</XPD:ATTR>
@@ -2021,6 +2828,9 @@
 <XPD:REF name="Model">GPa6wdVClQ37tHxIpg1hzqAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="HeadQualifierCompartment" type="UMLQualifierCompartmentView" guid="ANDlEO95uc81GXHQi05rYwAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">0</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">0</XPD:ATTR>
@@ -2029,6 +2839,9 @@
 <XPD:REF name="Model">huag6bBMOsdK5SSzsIVsvpAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="TailQualifierCompartment" type="UMLQualifierCompartmentView" guid="2sN930wv/xcqJzsffPgQJRAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">0</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">0</XPD:ATTR>
@@ -2038,29 +2851,44 @@
 </XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="OwnedViews[15]" type="UMLAssociationView" guid="kbth9nNlQ5IchnGhqQwi4mAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Points" type="Points">172,448;460,241</XPD:ATTR>
 <XPD:REF name="Model">mh6J6IL2085/Lav2gxi9qUAA</XPD:REF>
 <XPD:REF name="Head">IATAh7fcuxlpEeDUF1gRQNAA</XPD:REF>
 <XPD:REF name="Tail">LlUfc5JdKgW8HAr95aXlmsAA</XPD:REF>
 <XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="/lqIn/x7CqUr1Ge1tBTO5mAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">1.5707963267949</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
 <XPD:REF name="Model">mh6J6IL2085/Lav2gxi9qUAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="StereotypeLabel" type="EdgeLabelView" guid="G6Kq4mSRiCxQzvGqvwJphhAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">1.5707963267949</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
 <XPD:REF name="Model">mh6J6IL2085/Lav2gxi9qUAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="PropertyLabel" type="EdgeLabelView" guid="oBF9gl4/FnIFtfwwHFwExiAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">-1.5707963267949</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
 <XPD:REF name="Model">mh6J6IL2085/Lav2gxi9qUAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="HeadRoleNameLabel" type="EdgeLabelView" guid="/fxQQOq2yb7zBHunHS3qa7AA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">-0.523598775598299</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
@@ -2068,6 +2896,9 @@
 <XPD:REF name="Model">BxLfNWJngL1fTS6BaqLJ6/AA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="TailRoleNameLabel" type="EdgeLabelView" guid="pTuC64l5AXi3Qf3AmQaGIBAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">0.523598775598299</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
@@ -2075,6 +2906,9 @@
 <XPD:REF name="Model">Nt2+s6nEknRx5BRKKVKgjqAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="HeadMultiplicityLabel" type="EdgeLabelView" guid="Jvoij5+i9S6tRqy3PC98oeAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">0.523598775598299</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">25</XPD:ATTR>
@@ -2082,6 +2916,9 @@
 <XPD:REF name="Model">BxLfNWJngL1fTS6BaqLJ6/AA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="TailMultiplicityLabel" type="EdgeLabelView" guid="GVvj5wAX0mPFtEUGH7xGAjAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">-0.523598775598299</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">25</XPD:ATTR>
@@ -2089,6 +2926,9 @@
 <XPD:REF name="Model">Nt2+s6nEknRx5BRKKVKgjqAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="HeadPropertyLabel" type="EdgeLabelView" guid="suxVI1iXSrmWqOtv2Fy8/XAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">-0.785398163397448</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">40</XPD:ATTR>
@@ -2096,6 +2936,9 @@
 <XPD:REF name="Model">BxLfNWJngL1fTS6BaqLJ6/AA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="TailPropertyLabel" type="EdgeLabelView" guid="7pkvMfer/DcKdwuJcpwbNGAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">0.785398163397448</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">40</XPD:ATTR>
@@ -2103,6 +2946,9 @@
 <XPD:REF name="Model">Nt2+s6nEknRx5BRKKVKgjqAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="HeadQualifierCompartment" type="UMLQualifierCompartmentView" guid="s+YyTyQrLKrDFvhwA8O/PKAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">0</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">0</XPD:ATTR>
@@ -2111,6 +2957,9 @@
 <XPD:REF name="Model">BxLfNWJngL1fTS6BaqLJ6/AA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="TailQualifierCompartment" type="UMLQualifierCompartmentView" guid="g7dhw7PAnQWHCMdBBLxoMyAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">0</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">0</XPD:ATTR>
@@ -2120,17 +2969,26 @@
 </XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="OwnedViews[16]" type="UMLIncludeView" guid="0ryZkeL/wtDDIdIqhfzgV5AA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Points" type="Points">590,135;680,139</XPD:ATTR>
 <XPD:REF name="Model">uJ/Bymis9SEHb8O2wQx2cPAA</XPD:REF>
 <XPD:REF name="Head">QETq/MgzZkuPmgwEYg7b3aAA</XPD:REF>
 <XPD:REF name="Tail">U/5ZPPpe2IQ12x3I4ozMtaAA</XPD:REF>
 <XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="s3mNlszBqfdA6QilScRyQZAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">1.53</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">16</XPD:ATTR>
 <XPD:REF name="Model">uJ/Bymis9SEHb8O2wQx2cPAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="StereotypeLabel" type="EdgeLabelView" guid="tBq765s12/yiCe78x83lHKAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">True</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">1.53</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">28</XPD:ATTR>
@@ -2138,6 +2996,9 @@
 <XPD:REF name="Model">uJ/Bymis9SEHb8O2wQx2cPAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="PropertyLabel" type="EdgeLabelView" guid="sBWiS5Yry20MOax/kdeDVqAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">-1.53</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
@@ -2145,17 +3006,26 @@
 </XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="OwnedViews[17]" type="UMLIncludeView" guid="xWbJ1NDHXTwBRa2QgOLNidAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Points" type="Points">566,154;704,200</XPD:ATTR>
 <XPD:REF name="Model">ly6xQku8t9zw2YWEoLjyVDAA</XPD:REF>
 <XPD:REF name="Head">hnrlfn3WYbw/7CPa7r6Ds9AA</XPD:REF>
 <XPD:REF name="Tail">U/5ZPPpe2IQ12x3I4ozMtaAA</XPD:REF>
 <XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="SPwi/YDAivb8KxeRKAI0TKAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">1.25</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">16</XPD:ATTR>
 <XPD:REF name="Model">ly6xQku8t9zw2YWEoLjyVDAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="StereotypeLabel" type="EdgeLabelView" guid="GRD4dD1lkz6voYiLy7Xl11AA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">True</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">1.25</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">28</XPD:ATTR>
@@ -2163,6 +3033,9 @@
 <XPD:REF name="Model">ly6xQku8t9zw2YWEoLjyVDAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="PropertyLabel" type="EdgeLabelView" guid="Yl5bgvcuHclyNZ/FocPUOPAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">-1.25</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
@@ -2170,17 +3043,26 @@
 </XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="OwnedViews[18]" type="UMLExtendView" guid="zbJ7TyacFYOL+X+SyBVqqxAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Points" type="Points">724,345;546,239</XPD:ATTR>
 <XPD:REF name="Model">DUvl7UdQ0D3Pbwl8NTVk2DAA</XPD:REF>
 <XPD:REF name="Head">IATAh7fcuxlpEeDUF1gRQNAA</XPD:REF>
 <XPD:REF name="Tail">9s+v7G30pqQ14F62SfOgS/AA</XPD:REF>
 <XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="NZxbrq3KwpkCwwzeqroVJ7AA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">-2.11</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">16</XPD:ATTR>
 <XPD:REF name="Model">DUvl7UdQ0D3Pbwl8NTVk2DAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="StereotypeLabel" type="EdgeLabelView" guid="kptKkdVLbyGM6iO+FlMe7cAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">True</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">-2.11</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">28</XPD:ATTR>
@@ -2188,6 +3070,9 @@
 <XPD:REF name="Model">DUvl7UdQ0D3Pbwl8NTVk2DAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="PropertyLabel" type="EdgeLabelView" guid="fmsJH5z9wIHnp1zn2+WCZmAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">2.11</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
@@ -2201,134 +3086,233 @@
 <XPD:ATTR name="DefaultDiagram" type="boolean">False</XPD:ATTR>
 <XPD:REF name="DiagramOwner">y6Fq8zmscNHCiWw2ZqGb1IAA</XPD:REF>
 <XPD:OBJ name="DiagramView" type="UMLUseCaseDiagramView" guid="m5HTvoNLdGsHQ8xjhh3s9eAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:REF name="Diagram">SFA23ABVoGVEYb0rTe2us8AA</XPD:REF>
 <XPD:ATTR name="#OwnedViews" type="integer">7</XPD:ATTR>
 <XPD:OBJ name="OwnedViews[0]" type="UMLActorView" guid="mHGtIrJWESynf5hec13PS/AA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">480</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">90</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">70</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">100</XPD:ATTR>
 <XPD:REF name="Model">Twx7lnu35K26vBr/3lN+koAA</XPD:REF>
 <XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="GQLFZkl4CVH016Ns8nmu9wAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:OBJ name="NameLabel" type="LabelView" guid="GBFA3SAfNz9lTAFeL1Xd4dAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="FontStyle" type="integer">1</XPD:ATTR>
 <XPD:ATTR name="Text" type="string">读者</XPD:ATTR>
 </XPD:OBJ>
 <XPD:OBJ name="StereotypeLabel" type="LabelView" guid="X4xWDYVDjO8RceqiiPs1QaAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 </XPD:OBJ>
 <XPD:OBJ name="PropertyLabel" type="LabelView" guid="7bHAWtPvjrMcsl8ZL8irZoAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 </XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="AttributeCompartment" type="UMLAttributeCompartmentView" guid="Mob7pCmZfpoB4Y/9cM8sLuAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:REF name="Model">Twx7lnu35K26vBr/3lN+koAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="OperationCompartment" type="UMLOperationCompartmentView" guid="3J43dR7ZMGjh8qVJTdkTjRAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:REF name="Model">Twx7lnu35K26vBr/3lN+koAA</XPD:REF>
 </XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="OwnedViews[1]" type="UMLActorView" guid="XOnS9zT01BzxvEEbflREYkAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">240</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">330</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">70</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">100</XPD:ATTR>
 <XPD:REF name="Model">xOMRdFDMuPoZS6L5fladWcAA</XPD:REF>
 <XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="1k2IeftuB8apqD57Ouu0U5AA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:OBJ name="NameLabel" type="LabelView" guid="TErWJgcRV206/bFI7H/KdnAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="FontStyle" type="integer">1</XPD:ATTR>
 <XPD:ATTR name="Text" type="string">本科生</XPD:ATTR>
 </XPD:OBJ>
 <XPD:OBJ name="StereotypeLabel" type="LabelView" guid="C6YDNJZOVNaLBqEXqX4dNhAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 </XPD:OBJ>
 <XPD:OBJ name="PropertyLabel" type="LabelView" guid="MCzo9tfaLSEV1GgcOTbzc5AA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 </XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="AttributeCompartment" type="UMLAttributeCompartmentView" guid="iKeb9lnwcwJfn93qlrBIMWAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:REF name="Model">xOMRdFDMuPoZS6L5fladWcAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="OperationCompartment" type="UMLOperationCompartmentView" guid="iPEtV7OdShfLQaz8k+tOlAAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:REF name="Model">xOMRdFDMuPoZS6L5fladWcAA</XPD:REF>
 </XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="OwnedViews[2]" type="UMLActorView" guid="D5P5wc4cu++PaWgB2ckyRlAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">480</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">330</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">70</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">100</XPD:ATTR>
 <XPD:REF name="Model">saoqncv4jL9AnUPseoOEuGAA</XPD:REF>
 <XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="phA/W3F2VH/1kxA4jQXccDAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:OBJ name="NameLabel" type="LabelView" guid="3V4/Ou08skQp15KPrZ34RlAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="FontStyle" type="integer">1</XPD:ATTR>
 <XPD:ATTR name="Text" type="string">研究生</XPD:ATTR>
 </XPD:OBJ>
 <XPD:OBJ name="StereotypeLabel" type="LabelView" guid="/ydBYQ1MyOFVwIJJLaNeQKAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 </XPD:OBJ>
 <XPD:OBJ name="PropertyLabel" type="LabelView" guid="WniebrdwW2q4cazCmgdDivAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 </XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="AttributeCompartment" type="UMLAttributeCompartmentView" guid="dG6dpRdNifBwqqYG+Q99MzAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:REF name="Model">saoqncv4jL9AnUPseoOEuGAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="OperationCompartment" type="UMLOperationCompartmentView" guid="I/iJQVBs3rAfirvA0CeCUoAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:REF name="Model">saoqncv4jL9AnUPseoOEuGAA</XPD:REF>
 </XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="OwnedViews[3]" type="UMLActorView" guid="rNFKjqi4z8hotBjAHWc7U5AA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">720</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">330</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">70</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">100</XPD:ATTR>
 <XPD:REF name="Model">p62Lf9yQsSHiZYPOrXpqMAAA</XPD:REF>
 <XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="52eGUS2a4KTzOVfa/BVq8hAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:OBJ name="NameLabel" type="LabelView" guid="hpv7QtlsbeDBLCf0noQ59OAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="FontStyle" type="integer">1</XPD:ATTR>
 <XPD:ATTR name="Text" type="string">教师</XPD:ATTR>
 </XPD:OBJ>
 <XPD:OBJ name="StereotypeLabel" type="LabelView" guid="EUvpXd7Km4qBijfWZ5CDm3AA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 </XPD:OBJ>
 <XPD:OBJ name="PropertyLabel" type="LabelView" guid="VyBCnW0j8CJka7TrdiDpnnAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 </XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="AttributeCompartment" type="UMLAttributeCompartmentView" guid="mdy0ZDYz0l3EHPvzJvDW2TAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:REF name="Model">p62Lf9yQsSHiZYPOrXpqMAAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="OperationCompartment" type="UMLOperationCompartmentView" guid="BB+fupYpTlZo6Hc2k/x7eVAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:REF name="Model">p62Lf9yQsSHiZYPOrXpqMAAA</XPD:REF>
 </XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="OwnedViews[4]" type="UMLGeneralizationView" guid="E4K/Z4NwEsNQ4Qz+mjKIisAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Points" type="Points">291,344;499,136</XPD:ATTR>
 <XPD:REF name="Model">NNpewaQ3XUmtSmFcgcK3IOAA</XPD:REF>
 <XPD:REF name="Head">mHGtIrJWESynf5hec13PS/AA</XPD:REF>
 <XPD:REF name="Tail">XOnS9zT01BzxvEEbflREYkAA</XPD:REF>
 <XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="cXo24r5OtIAKeatmruOV4gAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">2.36</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">16</XPD:ATTR>
 <XPD:REF name="Model">NNpewaQ3XUmtSmFcgcK3IOAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="StereotypeLabel" type="EdgeLabelView" guid="JDhGlk6nERBrPNyPmuh8tJAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">2.36</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">28</XPD:ATTR>
 <XPD:REF name="Model">NNpewaQ3XUmtSmFcgcK3IOAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="PropertyLabel" type="EdgeLabelView" guid="U76vXjbDwlfNnIAPHUf7v2AA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">-2.36</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
@@ -2336,23 +3320,35 @@
 </XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="OwnedViews[5]" type="UMLGeneralizationView" guid="+EbU9RT5hBUXn85LvLWqNEAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Points" type="Points">515,335;515,145</XPD:ATTR>
 <XPD:REF name="Model">hBAeyPlbJUZg7nfkre5ks9AA</XPD:REF>
 <XPD:REF name="Head">mHGtIrJWESynf5hec13PS/AA</XPD:REF>
 <XPD:REF name="Tail">D5P5wc4cu++PaWgB2ckyRlAA</XPD:REF>
 <XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="LzWRaFXBTt5Nxq3LkhICIlAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">-3.14</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">16</XPD:ATTR>
 <XPD:REF name="Model">hBAeyPlbJUZg7nfkre5ks9AA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="StereotypeLabel" type="EdgeLabelView" guid="QPPDmMcn/OVpUmnog2ss+tAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">-3.14</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">28</XPD:ATTR>
 <XPD:REF name="Model">hBAeyPlbJUZg7nfkre5ks9AA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="PropertyLabel" type="EdgeLabelView" guid="H8HlIw7lVI7XSND6LWRfUfAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">3.14</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
@@ -2360,23 +3356,35 @@
 </XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="OwnedViews[6]" type="UMLGeneralizationView" guid="bojiX8DKbzqyGHUowAHoDxAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Points" type="Points">739,344;531,136</XPD:ATTR>
 <XPD:REF name="Model">Hs29zkq5feRkqLnnCffPP2AA</XPD:REF>
 <XPD:REF name="Head">mHGtIrJWESynf5hec13PS/AA</XPD:REF>
 <XPD:REF name="Tail">rNFKjqi4z8hotBjAHWc7U5AA</XPD:REF>
 <XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="wriWUGGPhJDl5bUkr2k220AA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">-2.36</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">16</XPD:ATTR>
 <XPD:REF name="Model">Hs29zkq5feRkqLnnCffPP2AA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="StereotypeLabel" type="EdgeLabelView" guid="3aXDgXu18wFVywV2gEG0UjAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">-2.36</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">28</XPD:ATTR>
 <XPD:REF name="Model">Hs29zkq5feRkqLnnCffPP2AA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="PropertyLabel" type="EdgeLabelView" guid="667Ext1u/R33YPjzQCjbwfAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
 <XPD:ATTR name="Alpha" type="real">2.36</XPD:ATTR>
 <XPD:ATTR name="Distance" type="real">15</XPD:ATTR>

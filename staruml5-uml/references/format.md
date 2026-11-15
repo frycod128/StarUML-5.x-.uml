@@ -61,6 +61,10 @@ Notes
   serialises `undefined` as the value; the file validates as XML but never opens.
 - Views and model elements are separate trees: a view points at its model element with
   `<XPD:REF name="Model">`, and the element lists the views back through `Views[i]`.
+- Unless the user explicitly requests other colors, call
+  `xpd.applyDefaultDiagramPalette(project)` before serialization. It preserves
+  explicit colors and adds line `$000E0E87`, fill `$00B9FFFF`, and font
+  `$00010000` to every View.
 
 ## 2. Namespaces and diagrams
 
@@ -311,7 +315,7 @@ Samples of the same shape: statechart diagrams in
 | --- | --- |
 | 无法打开模型文件。文件格式无效 modal, nothing loads | File is not XPD XML (typically StarUML 6 JSON, or PlantUML/XMI) |
 | `'291.13' is not a valid integer value.` modal, or an empty window | `Points` contains decimals or `NaN`; round every coordinate |
-| `Access violation at address … read of address 00000038` right after opening | `UMLAssociationView` is missing one of its end-label / qualifier children (see §3), or an edge `Head`/`Tail` points at a non-view |
+| `Access violation at address … read of address 00000038` right after opening | `UMLAssociationView` is missing one of its end-label / qualifier children (see §3); a sequence stimulus view lacks its nested `UMLActivationView` while `ShowActivation=True`; or an edge `Head`/`Tail` points at a non-view |
 | App opens on an empty window: title bar reads just `StarUML`, no error dialog | The file was never parsed. Either a malformed `ATTR` (type is not an XPD type name, value is `undefined`) or a file name StarUML refuses — renaming usually tells you which (see SKILL.md → Troubleshooting) |
 | Diagram canvas empty although the file loaded | No diagram is marked `DefaultDiagram=True`; double-click one in the Model Explorer |
 | File opens, but elements are missing from the explorer/diagram | Dangling GUID reference, or a type name that does not exist in the 5.x metamodel |

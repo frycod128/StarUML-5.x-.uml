@@ -141,5 +141,6 @@ for (const f of FLOWS) {
   diagramView.add(v);
 }
 
+xpd.applyDefaultDiagramPalette(project);
 xpd.writeFile(out, project);
 console.log(`wrote ${out} (${NODES.length} nodes, ${FLOWS.length} flows)`);

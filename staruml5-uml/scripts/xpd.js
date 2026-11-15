@@ -56,6 +56,12 @@ function bgrColor (rgb) {
   return `$00${value.slice(4, 6)}${value.slice(2, 4)}${value.slice(0, 2)}`.toUpperCase();
 }
 
+const DEFAULT_DIAGRAM_PALETTE = Object.freeze({
+  LineColor: bgrColor('#870e0e'),
+  FillColor: bgrColor('#ffffb9'),
+  FontColor: bgrColor('#000001')
+});
+
 class Elem {
   constructor (name, type, id) {
     this.name = name;
@@ -114,6 +120,24 @@ function walk (elem, out = []) {
   out.push(elem);
   for (const child of elem.children) walk(child, out);
   return out;
+}
+
+/**
+ * Apply the default diagram palette without overwriting explicit user choices.
+ * Every StarUML View inherits these three String attributes.
+ */
+function applyDefaultDiagramPalette (root) {
+  let styled = 0;
+  for (const elem of walk(root)) {
+    if (!elem.type.endsWith('View')) continue;
+    for (const [name, value] of Object.entries(DEFAULT_DIAGRAM_PALETTE)) {
+      if (!elem.attrs.some(attr => attr.name === name)) {
+        elem.attr(name, 'string', value);
+      }
+    }
+    styled++;
+  }
+  return styled;
 }
 
 /* ------------------------------------------------------------------- lint */
@@ -334,9 +358,28 @@ function selfTest () {
   flowView.add(new Elem('StereotypeLabel', 'EdgeLabelView').attr('Visible', 'boolean', 'False').ref('Model', flow.id));
   flowView.add(new Elem('PropertyLabel', 'EdgeLabelView').attr('Visible', 'boolean', 'False'));
   diagramView.add(flowView);
+  const problems = [];
+  const styledViews = applyDefaultDiagramPalette(project);
+  if (styledViews === 0) problems.push('default palette did not style any views');
+  for (const view of walk(project).filter(elem => elem.type.endsWith('View'))) {
+    for (const [name, value] of Object.entries(DEFAULT_DIAGRAM_PALETTE)) {
+      const attribute = view.attrs.find(attr => attr.name === name);
+      if (!attribute || attribute.value !== value) {
+        problems.push(`${view.type}.${name} missing default palette value`);
+      }
+    }
+  }
+  const customView = new Elem('Custom', 'LabelView')
+    .attr('LineColor', 'string', '$00112233');
+  const customRoot = new Elem('DocumentElement', 'UMLProject');
+  customRoot.add(customView);
+  applyDefaultDiagramPalette(customRoot);
+  const preserved = customView.attrs.find(attr => attr.name === 'LineColor');
+  if (!preserved || preserved.value !== '$00112233') {
+    problems.push('default palette overwrote an explicit LineColor');
+  }
 
   const xml = writeProject(project);
-  const problems = [];
   const elems = scan(xml);
   const guids = new Set(elems.map(e => e.guid));
 
@@ -433,6 +476,8 @@ module.exports = {
   guid,
   escapeXml,
   bgrColor,
+  DEFAULT_DIAGRAM_PALETTE,
+  applyDefaultDiagramPalette,
   lint,
   writeProject,
   writeFile,

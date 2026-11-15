@@ -375,6 +375,9 @@ function buildProject (diagrams = DIAGRAMS) {
     }
   });
 
+  // The palette helper adds the default line/fill/text colors to every View.
+  // Explicit colors already set by a diagram remain untouched.
+  xpd.applyDefaultDiagramPalette(project);
   return project;
 }
 
