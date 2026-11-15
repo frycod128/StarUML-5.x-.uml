@@ -1,0 +1,103 @@
+---
+name: staruml5-uml
+description: Create or edit StarUML 5 (.uml) project files in the legacy XPD XML format for use case, class, activity, statechart, sequence and communication diagrams. Use when the deliverable must open in StarUML 5.x; StarUML 6/7 projects are JSON (.mdj, _type/_id/ownedElements) and are a different format.
+metadata:
+  short-description: Write StarUML 5 XPD XML project files
+---
+
+# StarUML 5 (.uml) project files
+
+Classic StarUML 5.x is the Delphi build (5.0.2 is common). It reads **XPD XML** projects. It cannot read the StarUML 6/7 `.mdj` JSON format (`_type`/`_id`/`ownedElements`): such a file fails with a modal 错误 / 无法打开模型文件。文件格式无效 (invalid model file) dialog, whatever extension it carries. If the user's version is not already known, settle that first — the two formats are not interchangeable.
+
+Generate the XML with a script; do not hand-write a few thousand lines of `<XPD:OBJ>`.
+
+Sequence and communication diagrams add a model/view graph that is easy to make
+XML-valid but renderer-invalid. Read
+[references/interaction-diagrams.md](references/interaction-diagrams.md) before
+creating either kind.
+
+## Ground truth ships with the application
+
+StarUML 5 usually lives in `C:\Program Files (x86)\StarUML`, but it can be installed on another drive. Resolve it from `STARUML_HOME`, `%ProgramFiles(x86)%`, or by searching for `StarUML.exe`; the bundled scripts do that discovery themselves and accept explicit paths.
+
+| Source | Use it for |
+| --- | --- |
+| `samples\*.uml` | Real projects (use case, class, statechart) — copy element/view shapes and field sets from them |
+| `samples\StarUML Application Model.uml` | StarUML's own metamodel; `scripts/mine_metamodel.py UMLClassView UMLTransition` prints a type's fields and superclass |
+| `StarUML.exe` | Type/enum names as plain strings, e.g. `rg -a -o "UML[A-Za-z]*(View\|Diagram)" StarUML.exe` |
+| `StarUML.chm` | Help; extract with 7-Zip and read `modeling_with_<kind>_<element>.htm` for the toolbox element list of each diagram kind |
+
+Every `type="..."` in the output must trace back to one of these. Invented type names produce files StarUML refuses or misreads. The shipped samples used by this skill contain no activity or interaction project, so those element sets come from the help pages, the metamodel and observed StarUML-created projects rather than from a shipped sample.
+
+## Invariants
+
+- `<?xml version="1.0" encoding="UTF-8"?>`, then `<XPD:PROJECT xmlns:XPD="http://www.staruml.com" version="1">` → `<XPD:HEADER>` (empty `SUBUNITS`, `PROFILES` containing `UMLStandard`) → `<XPD:BODY>` → one `<XPD:OBJ name="DocumentElement" type="UMLProject" guid="…">`.
+- Children are `<XPD:OBJ name="Field" …>` for single-valued fields and `<XPD:OBJ name="Field[i]" …>` for collections; every collection is preceded by `<XPD:ATTR name="#Field" type="integer">N</XPD:ATTR>`.
+- Field order inside an object: `ATTR`s → `REF`s → `#Views`/`Views[i]` → owned collections → `#Associations` / `#Outgoings` / `#Incomings`.
+- Values are type-tagged; enums are written as literals: `PseudostateKind=pkInitial|pkDecision`, `LineStyle=lsOblique|lsRectilinear`, `DirectionKind=pdkReturn`, `Visibility=vkPublic`, `Aggregation`/`IsNavigable` on association ends.
+- `Points` are **integer** pairs (`"120,80;340,80"`). Decimals or `NaN` abort the load with `'291.13' is not a valid integer value.`; round after computing border intersections.
+- Booleans are `True`/`False`, never `true`/`false` (lowercase is dropped, and a default diagram marked with it will not open).
+- Never call `attr(name, value)` by mistake — the signature is `attr(name, type, value)`. A missing value writes the intended string into `@type` and `undefined` into the text.
+- Use case relationships use UML 1.4 names: `UMLInclude` = `Base` + `Addition`, `UMLExtend` = `Base` + `Extension`, `UMLGeneralization` = `Parent` + `Child`. `Connections[]` order on an association is arbitrary — StarUML matches ends by `Participant`.
+- `UMLAssociationView` must contain all ten end-label/qualifier children (`HeadRoleNameLabel` … `TailQualifierCompartment`). StarUML 5 raises an access violation without them — this is not an optional nicety. `PropertyLabel` may be omitted (StarUML's own samples do).
+- A visible system boundary is `UMLSubsystem` + `UMLSubsystemView`. `UMLSystemBoundaryView` exists but draws an unnamed rectangle.
+- GUIDs are opaque 24-character base64 strings that StarUML's own files end with `AA`; they must be unique. References are the raw GUID as element text: `<XPD:REF name="Model">…</XPD:REF>`.
+- Inverse collections are stored, not derived: `Views` on anything a view references through `Model`, `Associations` on classifiers (`Participant`), `Outgoings`/`Incomings` on state vertices (`Source`/`Target`). They must list the same GUIDs in document order — `scripts/xpd.js` computes them.
+- Write flat XML (no indentation), UTF-8, no BOM.
+- A diagram is `OwnedDiagrams[i]` under its owner, and its views live in `DiagramView` (`<Kind>DiagramView`) → `OwnedViews[i]`. Node views carry `Left/Top/Width/Height` plus `Model`; edge views carry `Points` (`"x,y;x,y"`), `Head`/`Tail` (view GUIDs, not model GUIDs) and label views.
+- **A running StarUML process or a visible main window is not proof that an `.uml` file loaded.** Invalid or semantically incomplete XPD can leave an empty StarUML window. A file passes the live-open gate only when the Model Explorer shows the expected project/model hierarchy **and** the expected default diagram tab opens with its named elements. Blank canvas, title bar containing only `StarUML`, empty project tree, a New Project dialog, or a fallback empty project must all be treated as load failure.
+- A generated diagram preview is not a process screenshot. Label each artifact accurately and capture a real StarUML window only when the user has authorized desktop use.
+- Sequence message endpoints are type-sensitive: `UMLSeqStimulusView.Head` and `.Tail` must reference `UMLLifeLineView` GUIDs, never the enclosing `UMLSeqObjectView`. Communication `UMLLinkView.Head/Tail` reference `UMLColObjectView` GUIDs.
+- A view nested through `ContainedViews` must carry `ContainerView` = its actual parent view GUID. In particular, every `UMLInteractionOperandView` points back to its `UMLCombinedFragmentView`; omitting that back-reference can produce `NO-DOCUMENT` from otherwise valid XML.
+- Communication links use `LineStyle=lsRectilinear`; every consecutive pair in `Points` must share X or share Y. Apply the same test to any rectilinear sequence edge.
+- A non-ASCII basename is not automatically fatal. If static checks pass but the live check returns `NO-DOCUMENT`, copy the identical bytes to an ASCII basename and retry before rewriting XML. Chinese directory names are not equivalent to a Chinese file basename.
+- `scripts/open_check.ps1` terminates all running StarUML instances. Get explicit user authorization around desktop use, run it serially, and never launch parallel open checks.
+- Keep new projects in the `http://www.staruml.com` XPD namespace. Some shipped examples use an older namespace; changing to it did not repair interaction loading.
+- StarUML color attributes are Delphi BGR strings, not CSS RGB: `#870e0e` → `$000E0E87`, `#ffffb9` → `$00B9FFFF`, `#000001` → `$00010000`.
+- StarUML 5 is UML 1.4, so names differ from UML 2 habits: include stores `Base`/`Addition`; association ends store `Participant`/`Multiplicity`/`IsNavigable`; class members are `Attributes`/`Operations` (+ `Parameters` with a `pdkReturn` parameter for the return type); activity nodes are `UMLActionState`, `UMLPseudostate` (kind), `UMLFinalState` with `UMLTransition` flows carrying `GuardCondition`.
+- Content of activity/statechart diagrams hangs off a state machine: `UMLActivityGraph` (or `UMLStateMachine`) → `Top` composite state → `Subvertices[i]` and `Transitions[i]`; the diagram itself is owned by that graph (`DiagramOwner` = graph).
+- Class/action views store only `NameCompartment` (+ `NameLabel`/`StereotypeLabel`/`PropertyLabel`); attribute and operation rows are regenerated by the app from the model, so never emit them.
+- On open the app re-renders from stored geometry, so the coordinates decide the layout. Give shapes enough width/height for their text, keep edges short and orthogonal where possible, and keep multiplicity/guard labels clear of lines.
+
+## Workflow
+
+1. Fix the diagram kind, the element list and the layout on paper (rows/columns), then read the matching table in [references/format.md](references/format.md). For sequence or communication work, also read [references/interaction-diagrams.md](references/interaction-diagrams.md) and build both diagrams from one message table when they must correspond.
+2. Write a small generator that builds the tree with `scripts/xpd.js` and serializes it; keep the content data (nodes, edges, members) separate from the XML mechanics.
+3. Validate: `python scripts/validate_xpd.py out.uml`. On top of XML/GUID/counter checks it rejects decimal `Points`, lowercase booleans, bad attribute types, malformed relationships, edge ends that point at model elements, association views missing their end labels, wrong sequence/link endpoint view types, missing operand `ContainerView` back-references, and diagonal rectilinear connectors. When StarUML's samples are present it also flags types/fields they never use.
+4. **Open it in StarUML 5 — static checks are not enough.** After explicit desktop authorization, `pwsh -File scripts/open_check.ps1 -File .\out.uml -AuthorizeCloseAll` launches a fresh app, polls the window title and exits `0` LOADED / `1` ERROR dialog / `2` NO-DOCUMENT / `3` not authorized / `4` another check is running. The helper kills every existing StarUML instance, so run it serially and warn the user about open work. A structurally perfect file can still crash the app, and a file that never parses looks identical to "nothing there". Even `LOADED` only proves the requested document was accepted: visually verify that the expected default diagram is displayed and that the Model Explorer contains the expected named project/model elements before accepting the file.
+5. Deliver the `.uml`, plus a rendered diagram preview when useful for layout review. Call it a preview or rendering, never a screenshot unless it was captured from the application.
+
+For a use case project, start from `scripts/example_usecase.js` instead of the blank boilerplate: it already has the boundary, the full association label set, include, extend and generalization wired up.
+
+## Troubleshooting
+
+| What you see | First thing to try |
+| --- | --- |
+| `无法打开模型文件。文件格式无效` | The file is not XPD XML (usually StarUML 6/7 JSON, PlantUML or XMI). Check the first line. |
+| `'291.13' is not a valid integer value.` (sometimes just an empty window) | A `Points` attribute has a decimal or `NaN`. Round every coordinate. |
+| `Access violation at address … read of address 00000038` | An `UMLAssociationView` is missing its end labels/qualifier compartments, or `Head`/`Tail` do not reference view GUIDs. |
+| Empty window, title bar is only `StarUML`, no dialog | Treat this as a failed load, not success. Either the file was never parsed (run the validator — look for a bad attribute type or `undefined`), the XPD has semantically invalid object/view relationships, or the file name is one StarUML refuses. Copy it to `test.uml`; if the copy opens, rename the deliverable. |
+| Diagram tab missing but the model tree is populated | No diagram has `DefaultDiagram=True`. |
+| Sequence diagram blank although messages exist in the model | `UMLSeqStimulusView.Head/Tail` probably reference `UMLSeqObjectView`; retarget them to the nested `UMLLifeLineView`s. |
+| `alt` frame is missing or the whole document does not load | Each `ContainedViews` operand needs a `ContainerView` reference to the exact parent frame view. Also check the reversed operand `CombinedFragment` references. |
+| Communication connector is diagonal or crosses a box | Use `lsRectilinear` and equal-X/equal-Y segments, with bounds taken from the object rectangles. |
+| Parallel load checks report opposite results | The helper kills every StarUML process. Stop parallel checks and rerun once; use the mutex/busy result as a signal, not as a model verdict. |
+| Boundary box has no caption | Switch the view from `UMLSystemBoundaryView` to `UMLSubsystemView`. |
+
+One reproducible naming trap: on a Chinese-locale StarUML 5 install, a file whose
+basename ended with `用例图.uml` opened to an empty window while the identical
+bytes loaded under an ASCII basename. Treat this as a filename fallback, not a
+diagnosis of the XML: copy first and retry, so a genuine structural error is not
+hidden by unrelated rewrites.
+
+## Files
+
+- [references/format.md](references/format.md) — document skeleton, per-diagram element/view/field tables, geometry and label placement, failure catalogue.
+- [references/interaction-diagrams.md](references/interaction-diagrams.md) — Sequence and communication model/view trees, stimuli/actions, `alt` operands, endpoint invariants, orthogonal routing, BGR colors and interaction-specific failures.
+- [scripts/xpd.js](scripts/xpd.js) — XPD tree builder and serializer (GUIDs, counters, inverse collections). `node scripts/xpd.js --self-test` proves it end to end.
+- [scripts/example_activity.js](scripts/example_activity.js) — a complete, runnable generator; copy it, swap the node/flow tables, keep the surrounding structure.
+- [scripts/example_usecase.js](scripts/example_usecase.js) — the use case counterpart: boundary, actors, associations, include, extend, generalization, several diagrams, geometry helpers. Start here for use case work.
+- [scripts/validate_xpd.py](scripts/validate_xpd.py) — static validator described above.
+- [scripts/open_check.ps1](scripts/open_check.ps1) — after explicit authorization, closes existing StarUML instances, launches one fresh instance and reports LOADED / ERROR / NO-DOCUMENT (exit 0/1/2; guards return 3/4). Run checks serially.
+- [scripts/mine_metamodel.py](scripts/mine_metamodel.py) — read fields/superclass of metamodel types from the installed sample, or list types by pattern.
+- Exemplars in [assets/](assets) — complete use case, class and activity projects. `use-case-diagram-example.uml` comes from StarUML's own samples; `use-case-diagram-full.uml` is the output of `example_usecase.js` and covers every relationship type. Open one when you want a known-good starting point, or diff new output against it.
