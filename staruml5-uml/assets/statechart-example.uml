@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XPD:PROJECT xmlns:XPD="http://www.staruml.com" version="1">
+<XPD:HEADER>
+<XPD:SUBUNITS>
+</XPD:SUBUNITS>
+<XPD:PROFILES>
+<XPD:PROFILE>UMLStandard</XPD:PROFILE>
+</XPD:PROFILES>
+</XPD:HEADER>
+<XPD:BODY>
+<XPD:OBJ name="DocumentElement" type="UMLProject" guid="zEousnp0N+Zf+Xr4179mRwAA">
+<XPD:ATTR name="Title" type="string">订单生命周期</XPD:ATTR>
+<XPD:ATTR name="Author" type="string"></XPD:ATTR>
+<XPD:ATTR name="Company" type="string"></XPD:ATTR>
+<XPD:ATTR name="Copyright" type="string"></XPD:ATTR>
+<XPD:ATTR name="#OwnedElements" type="integer">1</XPD:ATTR>
+<XPD:OBJ name="OwnedElements[0]" type="UMLModel" guid="YDqXTnwq5v99AyiVyj5uZIAA">
+<XPD:ATTR name="Name" type="string">订单系统</XPD:ATTR>
+<XPD:REF name="Namespace">zEousnp0N+Zf+Xr4179mRwAA</XPD:REF>
+<XPD:ATTR name="#OwnedElements" type="integer">1</XPD:ATTR>
+<XPD:OBJ name="OwnedElements[0]" type="UMLStateMachine" guid="xqrEq5APwQv35XzzZvQshxAA">
+<XPD:ATTR name="Name" type="string">订单生命周期</XPD:ATTR>
+<XPD:REF name="Namespace">YDqXTnwq5v99AyiVyj5uZIAA</XPD:REF>
+<XPD:OBJ name="Top" type="UMLCompositeState" guid="jITKLxsi83EHp0cp7jxFP3AA">
+<XPD:ATTR name="Name" type="string">TOP</XPD:ATTR>
+<XPD:REF name="StateMachine">xqrEq5APwQv35XzzZvQshxAA</XPD:REF>
+<XPD:ATTR name="#Subvertices" type="integer">6</XPD:ATTR>
+<XPD:OBJ name="Subvertices[0]" type="UMLPseudostate" guid="hwtsnoGNzj+8SiL/ZHtol7AA">
+<XPD:ATTR name="PseudostateKind" type="UMLPseudostateKind">pkInitial</XPD:ATTR>
+<XPD:REF name="ContainerState">jITKLxsi83EHp0cp7jxFP3AA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">1</XPD:ATTR>
+<XPD:REF name="Views[0]">OWszo1n5GR6gg3R1UudKuQAA</XPD:REF>
+<XPD:ATTR name="#Outgoings" type="integer">1</XPD:ATTR>
+<XPD:REF name="Outgoings[0]">86/4XAD00d5/mJaiHWI9rhAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Subvertices[1]" type="UMLCompositeState" guid="F4fs5CfBTYbN7ilehheBMtAA">
+<XPD:ATTR name="Name" type="string">待支付</XPD:ATTR>
+<XPD:REF name="ContainerState">jITKLxsi83EHp0cp7jxFP3AA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">2</XPD:ATTR>
+<XPD:REF name="Views[0]">+6SgBQIBkDT1rdOeNjavDsAA</XPD:REF>
+<XPD:REF name="Views[1]">x4WcmxP+Pgh8JXTsNWu2JtAA</XPD:REF>
+<XPD:ATTR name="#Outgoings" type="integer">1</XPD:ATTR>
+<XPD:REF name="Outgoings[0]">ZB2KyGR/xjWwKIzJb+w73XAA</XPD:REF>
+<XPD:ATTR name="#Incomings" type="integer">1</XPD:ATTR>
+<XPD:REF name="Incomings[0]">86/4XAD00d5/mJaiHWI9rhAA</XPD:REF>
+<XPD:ATTR name="#EntryActions" type="integer">1</XPD:ATTR>
+<XPD:OBJ name="EntryActions[0]" type="UMLUninterpretedAction" guid="T+IX51dTJwYF5wqUP9+K6fAA">
+<XPD:ATTR name="Name" type="string">生成支付截止时间</XPD:ATTR>
+<XPD:REF name="Owner">F4fs5CfBTYbN7ilehheBMtAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="Subvertices[2]" type="UMLCompositeState" guid="thE2RqLhEt/Ohemim57hYSAA">
+<XPD:ATTR name="Name" type="string">已支付</XPD:ATTR>
+<XPD:REF name="ContainerState">jITKLxsi83EHp0cp7jxFP3AA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">2</XPD:ATTR>
+<XPD:REF name="Views[0]">S19pJ8xwXkwI8svH8ZB0wWAA</XPD:REF>
+<XPD:REF name="Views[1]">nujo/Nzs27N4mVGB25zEh6AA</XPD:REF>
+<XPD:ATTR name="#Outgoings" type="integer">2</XPD:ATTR>
+<XPD:REF name="Outgoings[0]">IjqMj2yRrSLFrHdI7pzD0yAA</XPD:REF>
+<XPD:REF name="Outgoings[1]">oo1pNEkDvfbyCuO0nmZfuiAA</XPD:REF>
+<XPD:ATTR name="#Incomings" type="integer">3</XPD:ATTR>
+<XPD:REF name="Incomings[0]">ZB2KyGR/xjWwKIzJb+w73XAA</XPD:REF>
+<XPD:REF name="Incomings[1]">6ldtBaBjDsuFXLWDkA6JgVAA</XPD:REF>
+<XPD:REF name="Incomings[2]">oo1pNEkDvfbyCuO0nmZfuiAA</XPD:REF>
+<XPD:ATTR name="#EntryActions" type="integer">1</XPD:ATTR>
+<XPD:OBJ name="EntryActions[0]" type="UMLUninterpretedAction" guid="+J+l6/mbSIPgaAiacTQpIfAA">
+<XPD:ATTR name="Name" type="string">记录支付时间</XPD:ATTR>
+<XPD:REF name="Owner">thE2RqLhEt/Ohemim57hYSAA</XPD:REF>
+</XPD:OBJ>
+<XPD:ATTR name="#ExitActions" type="integer">1</XPD:ATTR>
+<XPD:OBJ name="ExitActions[0]" type="UMLUninterpretedAction" guid="S4BAEJkw2es+H/dy2RGuLfAA">
+<XPD:ATTR name="Name" type="string">释放库存锁定</XPD:ATTR>
+<XPD:REF name="Owner">thE2RqLhEt/Ohemim57hYSAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="Subvertices[3]" type="UMLCompositeState" guid="pxVSTVFLCeX9V780oJ7iH3AA">
+<XPD:ATTR name="Name" type="string">已发货</XPD:ATTR>
+<XPD:REF name="ContainerState">jITKLxsi83EHp0cp7jxFP3AA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">2</XPD:ATTR>
+<XPD:REF name="Views[0]">e6r7FQD3CxEHqYqa1Yzxj6AA</XPD:REF>
+<XPD:REF name="Views[1]">87Qc73+7PP3GIZ/Ox+PcBVAA</XPD:REF>
+<XPD:ATTR name="#Outgoings" type="integer">2</XPD:ATTR>
+<XPD:REF name="Outgoings[0]">6ldtBaBjDsuFXLWDkA6JgVAA</XPD:REF>
+<XPD:REF name="Outgoings[1]">P2Uvh+RRNbJj9ezSjqBnfQAA</XPD:REF>
+<XPD:ATTR name="#Incomings" type="integer">1</XPD:ATTR>
+<XPD:REF name="Incomings[0]">IjqMj2yRrSLFrHdI7pzD0yAA</XPD:REF>
+<XPD:ATTR name="#EntryActions" type="integer">1</XPD:ATTR>
+<XPD:OBJ name="EntryActions[0]" type="UMLUninterpretedAction" guid="iGeEc9IxBYczhV4LHPNyBeAA">
+<XPD:ATTR name="Name" type="string">生成运单号</XPD:ATTR>
+<XPD:REF name="Owner">pxVSTVFLCeX9V780oJ7iH3AA</XPD:REF>
+</XPD:OBJ>
+<XPD:ATTR name="#ExitActions" type="integer">1</XPD:ATTR>
+<XPD:OBJ name="ExitActions[0]" type="UMLUninterpretedAction" guid="qeokqmcETlKGo3Eneyg2U1AA">
+<XPD:ATTR name="Name" type="string">回写物流状态</XPD:ATTR>
+<XPD:REF name="Owner">pxVSTVFLCeX9V780oJ7iH3AA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="Subvertices[4]" type="UMLCompositeState" guid="Nli+600hDLOuV5++fnANTUAA">
+<XPD:ATTR name="Name" type="string">已关闭</XPD:ATTR>
+<XPD:REF name="ContainerState">jITKLxsi83EHp0cp7jxFP3AA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">2</XPD:ATTR>
+<XPD:REF name="Views[0]">W3vcQ8Ahy3v1mz2D5xCmiJAA</XPD:REF>
+<XPD:REF name="Views[1]">Q+ZDGhhOYmyHeyR60SqRa1AA</XPD:REF>
+<XPD:ATTR name="#Outgoings" type="integer">1</XPD:ATTR>
+<XPD:REF name="Outgoings[0]">9qjL1thwl48YBpTI0iyoJHAA</XPD:REF>
+<XPD:ATTR name="#Incomings" type="integer">1</XPD:ATTR>
+<XPD:REF name="Incomings[0]">P2Uvh+RRNbJj9ezSjqBnfQAA</XPD:REF>
+<XPD:ATTR name="#EntryActions" type="integer">1</XPD:ATTR>
+<XPD:OBJ name="EntryActions[0]" type="UMLUninterpretedAction" guid="dhGBXMcL2+/lWB7SwOjFBMAA">
+<XPD:ATTR name="Name" type="string">记录关闭原因</XPD:ATTR>
+<XPD:REF name="Owner">Nli+600hDLOuV5++fnANTUAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="Subvertices[5]" type="UMLFinalState" guid="j2SGQfP3vVKIVu7xuawpHeAA">
+<XPD:REF name="ContainerState">jITKLxsi83EHp0cp7jxFP3AA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">1</XPD:ATTR>
+<XPD:REF name="Views[0]">MS0T9xMIo/BfDtcivecyGHAA</XPD:REF>
+<XPD:ATTR name="#Incomings" type="integer">1</XPD:ATTR>
+<XPD:REF name="Incomings[0]">9qjL1thwl48YBpTI0iyoJHAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:ATTR name="#Transitions" type="integer">7</XPD:ATTR>
+<XPD:OBJ name="Transitions[0]" type="UMLTransition" guid="86/4XAD00d5/mJaiHWI9rhAA">
+<XPD:REF name="StateMachine">xqrEq5APwQv35XzzZvQshxAA</XPD:REF>
+<XPD:REF name="Source">hwtsnoGNzj+8SiL/ZHtol7AA</XPD:REF>
+<XPD:REF name="Target">F4fs5CfBTYbN7ilehheBMtAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">3</XPD:ATTR>
+<XPD:REF name="Views[0]">2xhgUPaZntKLrKUxbqNGQuAA</XPD:REF>
+<XPD:REF name="Views[1]">7pWpAC63z67HwUWEUtbeGUAA</XPD:REF>
+<XPD:REF name="Views[2]">yZwHTDS1Ik5BuQnJfKFVJLAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Transitions[1]" type="UMLTransition" guid="ZB2KyGR/xjWwKIzJb+w73XAA">
+<XPD:ATTR name="Name" type="string">支付 / 登记支付流水</XPD:ATTR>
+<XPD:REF name="StateMachine">xqrEq5APwQv35XzzZvQshxAA</XPD:REF>
+<XPD:REF name="Source">F4fs5CfBTYbN7ilehheBMtAA</XPD:REF>
+<XPD:REF name="Target">thE2RqLhEt/Ohemim57hYSAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">3</XPD:ATTR>
+<XPD:REF name="Views[0]">Ghd/lobJlzvd+KI8CAsynJAA</XPD:REF>
+<XPD:REF name="Views[1]">zeUa69HiWFJKMaX+C2zOjuAA</XPD:REF>
+<XPD:REF name="Views[2]">VC+aoBX/jIeCzipAiq8yj/AA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Transitions[2]" type="UMLTransition" guid="IjqMj2yRrSLFrHdI7pzD0yAA">
+<XPD:ATTR name="Name" type="string">发货 [库存充足] / 扣减库存</XPD:ATTR>
+<XPD:REF name="StateMachine">xqrEq5APwQv35XzzZvQshxAA</XPD:REF>
+<XPD:REF name="Source">thE2RqLhEt/Ohemim57hYSAA</XPD:REF>
+<XPD:REF name="Target">pxVSTVFLCeX9V780oJ7iH3AA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">3</XPD:ATTR>
+<XPD:REF name="Views[0]">Ttw2HKk1mhUgYY4Yd7JOhlAA</XPD:REF>
+<XPD:REF name="Views[1]">tafJSOfu2SzQex9s5rZpr2AA</XPD:REF>
+<XPD:REF name="Views[2]">hWjXb0Juso/Q2orUKin0WrAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Transitions[3]" type="UMLTransition" guid="6ldtBaBjDsuFXLWDkA6JgVAA">
+<XPD:ATTR name="Name" type="string">拒收 / 回滚运单</XPD:ATTR>
+<XPD:REF name="StateMachine">xqrEq5APwQv35XzzZvQshxAA</XPD:REF>
+<XPD:REF name="Source">pxVSTVFLCeX9V780oJ7iH3AA</XPD:REF>
+<XPD:REF name="Target">thE2RqLhEt/Ohemim57hYSAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">3</XPD:ATTR>
+<XPD:REF name="Views[0]">trOzhNm9pJn4fO4sYm4sNFAA</XPD:REF>
+<XPD:REF name="Views[1]">BQ+gR5cW00rPXHh8XaYftlAA</XPD:REF>
+<XPD:REF name="Views[2]">il7I2Or0tYXGhWXqCAOu4SAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Transitions[4]" type="UMLTransition" guid="P2Uvh+RRNbJj9ezSjqBnfQAA">
+<XPD:ATTR name="Name" type="string">确认收货 / 关闭订单</XPD:ATTR>
+<XPD:REF name="StateMachine">xqrEq5APwQv35XzzZvQshxAA</XPD:REF>
+<XPD:REF name="Source">pxVSTVFLCeX9V780oJ7iH3AA</XPD:REF>
+<XPD:REF name="Target">Nli+600hDLOuV5++fnANTUAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">3</XPD:ATTR>
+<XPD:REF name="Views[0]">j2iBtIw6Dw2X5zLPuzmwFzAA</XPD:REF>
+<XPD:REF name="Views[1]">fMS9pdkayIPwYTQPsqMWL3AA</XPD:REF>
+<XPD:REF name="Views[2]">oZMuFOaelXzzef/N/q14czAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Transitions[5]" type="UMLTransition" guid="9qjL1thwl48YBpTI0iyoJHAA">
+<XPD:REF name="StateMachine">xqrEq5APwQv35XzzZvQshxAA</XPD:REF>
+<XPD:REF name="Source">Nli+600hDLOuV5++fnANTUAA</XPD:REF>
+<XPD:REF name="Target">j2SGQfP3vVKIVu7xuawpHeAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">3</XPD:ATTR>
+<XPD:REF name="Views[0]">FlIMzQyA333cMhfkWg68rzAA</XPD:REF>
+<XPD:REF name="Views[1]">GObXmkhsHbEOfzjM1wVth5AA</XPD:REF>
+<XPD:REF name="Views[2]">a2QwCAKkNZ6ci4HwrHGmcEAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Transitions[6]" type="UMLTransition" guid="oo1pNEkDvfbyCuO0nmZfuiAA">
+<XPD:ATTR name="Name" type="string">修改收货地址 [未发货] / 更新运单</XPD:ATTR>
+<XPD:REF name="StateMachine">xqrEq5APwQv35XzzZvQshxAA</XPD:REF>
+<XPD:REF name="Source">thE2RqLhEt/Ohemim57hYSAA</XPD:REF>
+<XPD:REF name="Target">thE2RqLhEt/Ohemim57hYSAA</XPD:REF>
+</XPD:OBJ>
+<XPD:ATTR name="#OwnedDiagrams" type="integer">1</XPD:ATTR>
+<XPD:OBJ name="OwnedDiagrams[0]" type="UMLStatechartDiagram" guid="AbTvAkCQRHjvtqGTmTnJPcAA">
+<XPD:ATTR name="Name" type="string">订单状态图</XPD:ATTR>
+<XPD:ATTR name="DefaultDiagram" type="boolean">True</XPD:ATTR>
+<XPD:REF name="DiagramOwner">xqrEq5APwQv35XzzZvQshxAA</XPD:REF>
+<XPD:OBJ name="DiagramView" type="UMLStatechartDiagramView" guid="xkdKehvodh7Wcxl25d3DIKAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
+<XPD:REF name="Diagram">AbTvAkCQRHjvtqGTmTnJPcAA</XPD:REF>
+<XPD:ATTR name="#OwnedViews" type="integer">12</XPD:ATTR>
+<XPD:OBJ name="OwnedViews[0]" type="UMLPseudostateView" guid="OWszo1n5GR6gg3R1UudKuQAA">
+<XPD:ATTR name="Left" type="integer">60</XPD:ATTR>
+<XPD:ATTR name="Top" type="integer">30</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">18</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">18</XPD:ATTR>
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
+<XPD:REF name="Model">hwtsnoGNzj+8SiL/ZHtol7AA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[1]" type="UMLStateView" guid="+6SgBQIBkDT1rdOeNjavDsAA">
+<XPD:ATTR name="Left" type="integer">120</XPD:ATTR>
+<XPD:ATTR name="Top" type="integer">80</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">170</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">96</XPD:ATTR>
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
+<XPD:REF name="Model">F4fs5CfBTYbN7ilehheBMtAA</XPD:REF>
+<XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="m1vyKrm/NY0tdUaHdZPAj7AA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
+<XPD:OBJ name="NameLabel" type="LabelView" guid="un03LgdxGIenL6UcrgETu+AA">
+<XPD:ATTR name="Text" type="string">待支付</XPD:ATTR>
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
+</XPD:OBJ>
+<XPD:OBJ name="StereotypeLabel" type="LabelView" guid="xEuhQutzoNK47ZgOnJbcZuAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
+</XPD:OBJ>
+<XPD:OBJ name="PropertyLabel" type="LabelView" guid="QC12uvROnOTzpskcpO6+5oAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="InternalTransitionCompartment" type="UMLInternalTransitionCompartmentView" guid="x4WcmxP+Pgh8JXTsNWu2JtAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
+<XPD:REF name="Model">F4fs5CfBTYbN7ilehheBMtAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[2]" type="UMLStateView" guid="S19pJ8xwXkwI8svH8ZB0wWAA">
+<XPD:ATTR name="Left" type="integer">120</XPD:ATTR>
+<XPD:ATTR name="Top" type="integer">250</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">200</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">110</XPD:ATTR>
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
+<XPD:REF name="Model">thE2RqLhEt/Ohemim57hYSAA</XPD:REF>
+<XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="sP9dGpqe4S9rB60uzrB5FdAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
+<XPD:OBJ name="NameLabel" type="LabelView" guid="RC+JMQ3oVojgMkoIKU+MuIAA">
+<XPD:ATTR name="Text" type="string">已支付</XPD:ATTR>
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
+</XPD:OBJ>
+<XPD:OBJ name="StereotypeLabel" type="LabelView" guid="GQn1hSEX34dJCtkZHpXV1WAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
+</XPD:OBJ>
+<XPD:OBJ name="PropertyLabel" type="LabelView" guid="ubD/wj7wdfGJre2p5V47e/AA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="InternalTransitionCompartment" type="UMLInternalTransitionCompartmentView" guid="nujo/Nzs27N4mVGB25zEh6AA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
+<XPD:REF name="Model">thE2RqLhEt/Ohemim57hYSAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[3]" type="UMLStateView" guid="e6r7FQD3CxEHqYqa1Yzxj6AA">
+<XPD:ATTR name="Left" type="integer">430</XPD:ATTR>
+<XPD:ATTR name="Top" type="integer">250</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">190</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">110</XPD:ATTR>
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
+<XPD:REF name="Model">pxVSTVFLCeX9V780oJ7iH3AA</XPD:REF>
+<XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="XZ5FF8ZXt7cvdq7BOkMwX3AA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
+<XPD:OBJ name="NameLabel" type="LabelView" guid="suf67WPN99ie/vJghnYKg1AA">
+<XPD:ATTR name="Text" type="string">已发货</XPD:ATTR>
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
+</XPD:OBJ>
+<XPD:OBJ name="StereotypeLabel" type="LabelView" guid="Lw8MJ5x36jELLx0dlf6n6oAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
+</XPD:OBJ>
+<XPD:OBJ name="PropertyLabel" type="LabelView" guid="2NG7dl23wpU9YGf9TUjDPZAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="InternalTransitionCompartment" type="UMLInternalTransitionCompartmentView" guid="87Qc73+7PP3GIZ/Ox+PcBVAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
+<XPD:REF name="Model">pxVSTVFLCeX9V780oJ7iH3AA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[4]" type="UMLStateView" guid="W3vcQ8Ahy3v1mz2D5xCmiJAA">
+<XPD:ATTR name="Left" type="integer">430</XPD:ATTR>
+<XPD:ATTR name="Top" type="integer">450</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">190</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">96</XPD:ATTR>
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
+<XPD:REF name="Model">Nli+600hDLOuV5++fnANTUAA</XPD:REF>
+<XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="jzo0BxBWAdxN0nHFcnLbQUAA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
+<XPD:OBJ name="NameLabel" type="LabelView" guid="cKrjio9v438hzx9V0wFCYgAA">
+<XPD:ATTR name="Text" type="string">已关闭</XPD:ATTR>
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
+</XPD:OBJ>
+<XPD:OBJ name="StereotypeLabel" type="LabelView" guid="VUKhh9ZRyDKxwLzBOQTpxeAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
+</XPD:OBJ>
+<XPD:OBJ name="PropertyLabel" type="LabelView" guid="6P8veQPJpIPoPlODCxNTQ1AA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="InternalTransitionCompartment" type="UMLInternalTransitionCompartmentView" guid="Q+ZDGhhOYmyHeyR60SqRa1AA">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
+<XPD:REF name="Model">Nli+600hDLOuV5++fnANTUAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[5]" type="UMLFinalStateView" guid="MS0T9xMIo/BfDtcivecyGHAA">
+<XPD:ATTR name="Left" type="integer">513</XPD:ATTR>
+<XPD:ATTR name="Top" type="integer">590</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">24</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">24</XPD:ATTR>
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
+<XPD:REF name="Model">j2SGQfP3vVKIVu7xuawpHeAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[6]" type="UMLTransitionView" guid="2xhgUPaZntKLrKUxbqNGQuAA">
+<XPD:ATTR name="LineStyle" type="LineStyleKind">lsOblique</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">69,48;115,120</XPD:ATTR>
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
+<XPD:REF name="Model">86/4XAD00d5/mJaiHWI9rhAA</XPD:REF>
+<XPD:REF name="Head">+6SgBQIBkDT1rdOeNjavDsAA</XPD:REF>
+<XPD:REF name="Tail">OWszo1n5GR6gg3R1UudKuQAA</XPD:REF>
+<XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="7pWpAC63z67HwUWEUtbeGUAA">
+<XPD:ATTR name="Alpha" type="real">1.5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">16</XPD:ATTR>
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
+<XPD:REF name="Model">86/4XAD00d5/mJaiHWI9rhAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="StereotypeLabel" type="EdgeLabelView" guid="yZwHTDS1Ik5BuQnJfKFVJLAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">1.5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
+<XPD:REF name="Model">86/4XAD00d5/mJaiHWI9rhAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="PropertyLabel" type="EdgeLabelView" guid="ACnPHA7IcAcyWS/gM9wE+hAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">-1.5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[7]" type="UMLTransitionView" guid="Ghd/lobJlzvd+KI8CAsynJAA">
+<XPD:ATTR name="LineStyle" type="LineStyleKind">lsOblique</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">205,176;205,250</XPD:ATTR>
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
+<XPD:REF name="Model">ZB2KyGR/xjWwKIzJb+w73XAA</XPD:REF>
+<XPD:REF name="Head">S19pJ8xwXkwI8svH8ZB0wWAA</XPD:REF>
+<XPD:REF name="Tail">+6SgBQIBkDT1rdOeNjavDsAA</XPD:REF>
+<XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="zeUa69HiWFJKMaX+C2zOjuAA">
+<XPD:ATTR name="Alpha" type="real">1.5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">16</XPD:ATTR>
+<XPD:ATTR name="Text" type="string">支付 / 登记支付流水</XPD:ATTR>
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
+<XPD:REF name="Model">ZB2KyGR/xjWwKIzJb+w73XAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="StereotypeLabel" type="EdgeLabelView" guid="VC+aoBX/jIeCzipAiq8yj/AA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">1.5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
+<XPD:REF name="Model">ZB2KyGR/xjWwKIzJb+w73XAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="PropertyLabel" type="EdgeLabelView" guid="1CO4xPsuEWbCQ99qhd+JHAAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">-1.5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[8]" type="UMLTransitionView" guid="Ttw2HKk1mhUgYY4Yd7JOhlAA">
+<XPD:ATTR name="LineStyle" type="LineStyleKind">lsOblique</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">320,290;430,290</XPD:ATTR>
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
+<XPD:REF name="Model">IjqMj2yRrSLFrHdI7pzD0yAA</XPD:REF>
+<XPD:REF name="Head">e6r7FQD3CxEHqYqa1Yzxj6AA</XPD:REF>
+<XPD:REF name="Tail">S19pJ8xwXkwI8svH8ZB0wWAA</XPD:REF>
+<XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="tafJSOfu2SzQex9s5rZpr2AA">
+<XPD:ATTR name="Alpha" type="real">-1.5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">-40</XPD:ATTR>
+<XPD:ATTR name="Text" type="string">发货 [库存充足] / 扣减库存</XPD:ATTR>
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
+<XPD:REF name="Model">IjqMj2yRrSLFrHdI7pzD0yAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="StereotypeLabel" type="EdgeLabelView" guid="hWjXb0Juso/Q2orUKin0WrAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">1.5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
+<XPD:REF name="Model">IjqMj2yRrSLFrHdI7pzD0yAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="PropertyLabel" type="EdgeLabelView" guid="60f47kCXDzmGUbVxC0AU69AA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">-1.5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[9]" type="UMLTransitionView" guid="trOzhNm9pJn4fO4sYm4sNFAA">
+<XPD:ATTR name="LineStyle" type="LineStyleKind">lsOblique</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">430,330;320,330</XPD:ATTR>
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
+<XPD:REF name="Model">6ldtBaBjDsuFXLWDkA6JgVAA</XPD:REF>
+<XPD:REF name="Head">S19pJ8xwXkwI8svH8ZB0wWAA</XPD:REF>
+<XPD:REF name="Tail">e6r7FQD3CxEHqYqa1Yzxj6AA</XPD:REF>
+<XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="BQ+gR5cW00rPXHh8XaYftlAA">
+<XPD:ATTR name="Alpha" type="real">1.5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">40</XPD:ATTR>
+<XPD:ATTR name="Text" type="string">拒收 / 回滚运单</XPD:ATTR>
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
+<XPD:REF name="Model">6ldtBaBjDsuFXLWDkA6JgVAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="StereotypeLabel" type="EdgeLabelView" guid="il7I2Or0tYXGhWXqCAOu4SAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">1.5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
+<XPD:REF name="Model">6ldtBaBjDsuFXLWDkA6JgVAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="PropertyLabel" type="EdgeLabelView" guid="y01aOHiBD4Jh3hmyC40wyxAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">-1.5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[10]" type="UMLTransitionView" guid="j2iBtIw6Dw2X5zLPuzmwFzAA">
+<XPD:ATTR name="LineStyle" type="LineStyleKind">lsOblique</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">525,360;525,450</XPD:ATTR>
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
+<XPD:REF name="Model">P2Uvh+RRNbJj9ezSjqBnfQAA</XPD:REF>
+<XPD:REF name="Head">W3vcQ8Ahy3v1mz2D5xCmiJAA</XPD:REF>
+<XPD:REF name="Tail">e6r7FQD3CxEHqYqa1Yzxj6AA</XPD:REF>
+<XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="fMS9pdkayIPwYTQPsqMWL3AA">
+<XPD:ATTR name="Alpha" type="real">1.5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">16</XPD:ATTR>
+<XPD:ATTR name="Text" type="string">确认收货 / 关闭订单</XPD:ATTR>
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
+<XPD:REF name="Model">P2Uvh+RRNbJj9ezSjqBnfQAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="StereotypeLabel" type="EdgeLabelView" guid="oZMuFOaelXzzef/N/q14czAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">1.5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
+<XPD:REF name="Model">P2Uvh+RRNbJj9ezSjqBnfQAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="PropertyLabel" type="EdgeLabelView" guid="XF9SmWKi9Zs7LyzA+zNKlJAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">-1.5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[11]" type="UMLTransitionView" guid="FlIMzQyA333cMhfkWg68rzAA">
+<XPD:ATTR name="LineStyle" type="LineStyleKind">lsOblique</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">525,546;525,590</XPD:ATTR>
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
+<XPD:REF name="Model">9qjL1thwl48YBpTI0iyoJHAA</XPD:REF>
+<XPD:REF name="Head">MS0T9xMIo/BfDtcivecyGHAA</XPD:REF>
+<XPD:REF name="Tail">W3vcQ8Ahy3v1mz2D5xCmiJAA</XPD:REF>
+<XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="GObXmkhsHbEOfzjM1wVth5AA">
+<XPD:ATTR name="Alpha" type="real">1.5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">16</XPD:ATTR>
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
+<XPD:REF name="Model">9qjL1thwl48YBpTI0iyoJHAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="StereotypeLabel" type="EdgeLabelView" guid="a2QwCAKkNZ6ci4HwrHGmcEAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">1.5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
+<XPD:REF name="Model">9qjL1thwl48YBpTI0iyoJHAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="PropertyLabel" type="EdgeLabelView" guid="n7dGedCKDjHqV5fYazgYmCAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">-1.5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
+</XPD:OBJ>
+</XPD:OBJ>
+</XPD:OBJ>
+</XPD:OBJ>
+</XPD:OBJ>
+</XPD:OBJ>
+</XPD:OBJ>
+</XPD:BODY>
+</XPD:PROJECT>

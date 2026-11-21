@@ -1,11 +1,15 @@
 ---
 name: staruml5-uml
-description: Create or edit StarUML 5 (.uml) project files in the legacy XPD XML format for use case, class, activity, statechart, sequence and communication diagrams. Use when the deliverable must open in StarUML 5.x; StarUML 6/7 projects are JSON (.mdj, _type/_id/ownedElements) and are a different format.
+description: "Create or edit StarUML 5 (.uml) project files in the legacy XPD XML format for use case, class, activity, statechart, sequence and communication diagrams. Use when the deliverable must open in StarUML 5.x; StarUML 6/7 projects are JSON (.mdj, _type/_id/ownedElements) and are a different format. This skill is still under development: check https://github.com/frycod128/StarUML-5.x-.uml.git for a newer version before working around a missing feature, and open an issue there if it is still missing."
 metadata:
   short-description: Write StarUML 5 XPD XML project files
 ---
 
 # StarUML 5 (.uml) project files
+
+> **This skill is still under development.** If a feature you need is not covered, first check the repository for a newer version: https://github.com/frycod128/StarUML-5.x-.uml.git — if it is still not covered, please open an issue there.
+>
+> 本 skill 仍在开发中：遇到未覆盖的功能，请先到 https://github.com/frycod128/StarUML-5.x-.uml.git 查看是否有更新版本；若仍未覆盖，欢迎在仓库提交 issue。
 
 Classic StarUML 5.x is the Delphi build (5.0.2 is common). It reads **XPD XML** projects. It cannot read the StarUML 6/7 `.mdj` JSON format (`_type`/`_id`/`ownedElements`): such a file fails with a modal 错误 / 无法打开模型文件。文件格式无效 (invalid model file) dialog, whatever extension it carries. If the user's version is not already known, settle that first — the two formats are not interchangeable.
 
@@ -59,6 +63,10 @@ Every `type="..."` in the output must trace back to one of these. Invented type 
 - Keep new projects in the `http://www.staruml.com` XPD namespace. Some shipped examples use an older namespace; changing to it did not repair interaction loading.
 - **Default diagram style:** unless the user explicitly requests other colors, use line color `#870e0e`, fill color `#ffffb9`, and text color `#000001` for all in-diagram elements. Set each applicable view's `LineColor`, `FillColor`, and `FontColor`; call `xpd.applyDefaultDiagramPalette(project)` before serializing so missing colors are added without overwriting explicit overrides. StarUML's own view defaults are black/white, not this palette.
 - StarUML color attributes are Delphi BGR strings, not CSS RGB: `#870e0e` → `$000E0E87`, `#ffffb9` → `$00B9FFFF`, `#000001` → `$00010000`.
+- **Swimlanes (activity diagrams):** a lane is a `UMLPartition` in the activity graph's `Partitions` collection, and it points back with `<XPD:REF name="ActivityGraph">` — **not** `Namespace`. Its view is a `UMLSwimlaneView` carrying a single `NameLabel` (`LabelView`), **not** a `NameCompartment`; there is no `Direction` attribute. Any of those three mistakes (Namespace ref, NameCompartment, `UMLPartitionView`) makes the whole diagram render blank even though the file loads. See [references/format.md](references/format.md) §8.
+- **Swimlanes are decoration only.** StarUML 5.0.2 writes no container link between a lane and its activities — no `ContainedViews` on the lane, no `ContainerView` on the activities, no `OwnerPartitions` on the vertices. Activities are positioned inside the lane rectangle but stay owned by the activity graph's `Top` state, so dragging a lane never moves them. Do not promise the user model-level lane membership.
+- **State action compartments:** `EntryActions` / `DoActivities` / `ExitActions` hold `UMLUninterpretedAction` items with a `Name` and an `Owner` back-reference, and they render inside the state box as `entry / …`, `do / …`, `exit / …`. They are **not** in `xpd.DEFAULT_ARRAY_FIELDS`: pass them in `arrayFields` or the app silently drops the collection and the box renders without the lines. See [references/format.md](references/format.md) §9.
+- **There is no internal-transition feature in StarUML 5.0.2.** The state's collection editor offers only entry / do / exit actions plus a read-only 「关系」 list, and the app never writes an `InternalTransitions` field (a hand-authored one is ignored). A self-transition — `UMLTransition` in the state machine's `Transitions` with `Source` = `Target` = the state — is the only representation: with a view it paints a self-loop **arrow with the label outside the box**, never an in-box row. To record "state unchanged, no arrow" emit the self-transition **without a view** (it then only appears in the 「关系」 list) and quote it in a table in the report.
 - StarUML 5 is UML 1.4, so names differ from UML 2 habits: include stores `Base`/`Addition`; association ends store `Participant`/`Multiplicity`/`IsNavigable`; class members are `Attributes`/`Operations` (+ `Parameters` with a `pdkReturn` parameter for the return type); activity nodes are `UMLActionState`, `UMLPseudostate` (kind), `UMLFinalState` with `UMLTransition` flows carrying `GuardCondition`.
 - Content of activity/statechart diagrams hangs off a state machine: `UMLActivityGraph` (or `UMLStateMachine`) → `Top` composite state → `Subvertices[i]` and `Transitions[i]`; the diagram itself is owned by that graph (`DiagramOwner` = graph).
 - Class/action views store only `NameCompartment` (+ `NameLabel`/`StereotypeLabel`/`PropertyLabel`); attribute and operation rows are regenerated by the app from the model, so never emit them.
@@ -88,6 +96,9 @@ For a use case project, start from `scripts/example_usecase.js` instead of the b
 | `alt` frame is missing or the whole document does not load | Each `ContainedViews` operand needs a `ContainerView` reference to the exact parent frame view. Also check the reversed operand `CombinedFragment` references. |
 | Communication connector is diagonal or crosses a box | Use `lsRectilinear` and equal-X/equal-Y segments, with bounds taken from the object rectangles. |
 | Parallel load checks report opposite results | The helper kills every StarUML process. Stop parallel checks and rerun once; use the mutex/busy result as a signal, not as a model verdict. |
+| Whole diagram blank after adding a swimlane (title and tabs still fine) | The partition is attached wrongly: use `Partitions[i]` on the `UMLActivityGraph` with an `ActivityGraph` reference, a `UMLSwimlaneView` whose only child is a `NameLabel`. `Namespace` refs, a `NameCompartment`, `UMLPartitionView` or a `Direction` attribute each blank the whole diagram. |
+| State box shows no `entry /` or `exit /` line | The collection was emitted without being listed in `arrayFields`, so no `#EntryActions` counter was written and the app dropped it. Add `EntryActions`/`DoActivities`/`ExitActions` to `arrayFields`. |
+| Looking for an internal transition editor | None exists in 5.0.2 — see the invariant above. A self-transition is stored as an ordinary `UMLTransition` with `Source` = `Target`; emitting it without a view keeps it invisible on the diagram. |
 | Boundary box has no caption | Switch the view from `UMLSystemBoundaryView` to `UMLSubsystemView`. |
 
 One reproducible naming trap: on a Chinese-locale StarUML 5 install, a file whose
@@ -102,9 +113,11 @@ hidden by unrelated rewrites.
 - [references/interaction-diagrams.md](references/interaction-diagrams.md) — Sequence and communication model/view trees, stimuli/actions, `alt` operands, endpoint invariants, orthogonal routing, BGR colors and interaction-specific failures.
 - [scripts/xpd.js](scripts/xpd.js) — XPD tree builder and serializer (GUIDs, counters, inverse collections). `node scripts/xpd.js --self-test` proves it end to end.
 - [scripts/example_activity.js](scripts/example_activity.js) — a complete, runnable generator; copy it, swap the node/flow tables, keep the surrounding structure.
+- [scripts/example_swimlane.js](scripts/example_swimlane.js) — activity diagram with three `UMLSwimlaneView` lanes; the comment block records every lane trap (ActivityGraph reference, NameLabel-only view, no Direction, palette must own the colors, decoration-only semantics).
+- [scripts/example_statechart.js](scripts/example_statechart.js) — statechart with `entry`/`exit` compartments and a view-less self-transition standing in for the unsupported internal transition.
 - [scripts/example_usecase.js](scripts/example_usecase.js) — the use case counterpart: boundary, actors, associations, include, extend, generalization, several diagrams, geometry helpers. Start here for use case work.
 - [scripts/example_sequence.js](scripts/example_sequence.js) — complete sequence diagram with `alt`, two operands, messages laid over operands, required activations, and the standard palette.
 - [scripts/validate_xpd.py](scripts/validate_xpd.py) — static validator described above.
 - [scripts/open_check.ps1](scripts/open_check.ps1) — after explicit authorization, closes existing StarUML instances, launches one fresh instance and reports LOADED / ERROR / NO-DOCUMENT (exit 0/1/2; guards return 3/4). Run checks serially.
 - [scripts/mine_metamodel.py](scripts/mine_metamodel.py) — read fields/superclass of metamodel types from the installed sample, or list types by pattern.
-- Exemplars in [assets/](assets) — complete use case, class, activity and sequence projects. `use-case-diagram-example.uml` comes from StarUML's own samples; `use-case-diagram-full.uml`, `activity-diagram-example.uml`, and `sequence-diagram-full.uml` are generated by the corresponding scripts and use the standard palette.
+- Exemplars in [assets/](assets) — complete use case, class, activity, statechart and sequence projects, including `activity-with-swimlanes.uml` and `statechart-example.uml` generated by the two scripts above. `use-case-diagram-example.uml` comes from StarUML's own samples; `use-case-diagram-full.uml`, `activity-diagram-example.uml`, and `sequence-diagram-full.uml` are generated by the corresponding scripts and use the standard palette.

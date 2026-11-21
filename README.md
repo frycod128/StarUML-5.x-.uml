@@ -10,6 +10,14 @@ skill 的元数据，并在执行任务前完整读取 `SKILL.md` 及其任务�
 
 > 版本边界：本 skill 面向 StarUML 5.x 的 XPD XML，不处理 StarUML 6/7 的
 > `.mdj` JSON 项目。如果最终必须使用 StarUML 5.x，才应激活本 skill。
+> **本 skill 仍在开发中。** 遇到未覆盖的功能，请先到
+> [StarUML-5.x-.uml](https://github.com/frycod128/StarUML-5.x-.uml.git) 查看是否有更新版本；
+> 若仍未覆盖，欢迎在仓库提交 issue。
+>
+> This skill is still under development. If a feature you need is not covered,
+> check the repository for a newer version first, and open an issue there if it is
+> still missing.
+
 
 ## Agent 装载协议
 
@@ -32,6 +40,8 @@ skill，然后再开始修改文件：
 | --- | --- |
 | 生成或编辑任一种受支持的图 | [`references/format.md`](staruml5-uml/references/format.md) |
 | 生成或编辑顺序图、通信图 | [`references/interaction-diagrams.md`](staruml5-uml/references/interaction-diagrams.md) |
+| 画泳道（Partition / SwimlaneView） | [`references/format.md` §8](staruml5-uml/references/format.md) |
+| 写状态内部活动（entry / do / exit）或处理“内部迁移” | [`references/format.md` §9](staruml5-uml/references/format.md) |
 | 遇到加载、布局或关系错误 | 先查 `SKILL.md` 的 Troubleshooting，再读错误类型对应的引用文件 |
 
 完成上述步骤后，Agent 应能明确回答以下三项，才可视为已经装载：
@@ -108,8 +118,20 @@ staruml5-uml/
 ├── SKILL.md
 ├── agents/openai.yaml
 ├── references/
+│   ├── format.md                      # 含 §8 泳道、§9 状态内部活动与“内部迁移”真相
+│   └── interaction-diagrams.md
 ├── scripts/
+│   ├── xpd.js  validate_xpd.py  open_check.ps1  mine_metamodel.py
+│   ├── example_usecase.js  example_activity.js
+│   ├── example_swimlane.js           # 三泳道活动图，注释记录全部坑
+│   ├── example_statechart.js         # entry/exit + 无视图自迁移
+│   └── example_sequence.js
 └── assets/
+    ├── use-case-diagram-example.uml  use-case-diagram-full.uml
+    ├── class-diagram-example.uml     activity-diagram-example.uml
+    ├── activity-with-swimlanes.uml   # 由 example_swimlane.js 生成
+    ├── statechart-example.uml        # 由 example_statechart.js 生成
+    └── sequence-diagram-full.uml
 ```
 
 最后用一个明确任务验证触发是否生效，例如：“请使用 `$staruml5-uml` 创建一个

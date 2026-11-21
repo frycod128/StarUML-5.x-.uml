@@ -85,7 +85,7 @@ The diagram is owned by whatever the user drew it in: a package/model
 
 ```xml
 <XPD:OBJ name="OwnedElements[0]" type="UMLActor" guid="…">
-<XPD:ATTR name="Name" type="string">读者</XPD:ATTR>
+<XPD:ATTR name="Name" type="string">客服</XPD:ATTR>
 <XPD:REF name="Namespace">…model…</XPD:REF>
 <XPD:ATTR name="#Views" type="integer">3</XPD:ATTR>     <!-- view + 2 compartments -->
 <XPD:REF name="Views[0]">…actor view…</XPD:REF>
@@ -324,5 +324,142 @@ Samples of the same shape: statechart diagrams in
 | System boundary is a nameless rectangle | Drawn with `UMLSystemBoundaryView`; use `UMLSubsystem` + `UMLSubsystemView` to show the caption |
 | Multiplicity/guard text missing | `Multiplicity`/`GuardCondition` not set on the model element (the app re-renders label text) |
 | Transitions ignored in an activity/statechart diagram | `Transitions` emitted inside `Top` instead of the state machine |
+| Whole activity diagram blank after adding a lane | Partition attached with `Namespace` instead of `ActivityGraph`, view built from `NameCompartment`, or the non-existent `UMLPartitionView` / `Direction` used |
+| State box renders without `entry /` / `exit /` lines | `EntryActions` / `ExitActions` / `DoActivities` not listed in `arrayFields`, so no `#…` counter was written and the app dropped the collection |
+| `InternalTransitions` written by hand is ignored | 5.0.2 has no such feature; use a `UMLTransition` with `Source` = `Target` (see §9) |
 | Duplicate/ghost shapes | Missing inverse collections (`Views`, `Associations`, `Outgoings`, `Incomings`) or counters that disagree with the actual child count |
 | Chinese text garbled | File not UTF-8 (write UTF-8 without BOM; escape `&`, `<`, `>`) |
+
+
+## 8. Activity diagram: swimlanes (Partition + SwimlaneView)
+
+Verified against StarUML 5.0.2 by drawing a lane in the GUI and diffing the saved
+file. A lane is a pair: one model element on the activity graph plus one view.
+
+```xml
+<!-- model: child of UMLActivityGraph, reference name is ActivityGraph (NOT Namespace) -->
+<XPD:OBJ name="Partitions[0]" type="UMLPartition" guid="…">
+<XPD:ATTR name="Name" type="string">客服</XPD:ATTR>
+<XPD:REF name="ActivityGraph">…activity graph guid…</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">1</XPD:ATTR>
+<XPD:REF name="Views[0]">…swimlane view guid…</XPD:REF>     <!-- written by xpd.js -->
+</XPD:OBJ>
+
+<!-- view: child of DiagramView.OwnedViews, only a NameLabel - no compartments -->
+<XPD:OBJ name="OwnedViews[0]" type="UMLSwimlaneView" guid="…">
+<XPD:ATTR name="LineColor" type="string">$000E0E87</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="FontColor" type="string">$00010000</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">20</XPD:ATTR>
+<XPD:ATTR name="Top" type="integer">20</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">180</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">430</XPD:ATTR>
+<XPD:REF name="Model">…partition guid…</XPD:REF>
+<XPD:OBJ name="NameLabel" type="LabelView" guid="…">
+<XPD:ATTR name="Text" type="string">客服</XPD:ATTR>
+</XPD:OBJ>
+</XPD:OBJ>
+```
+
+Facts that are not obvious from the metamodel and each of which can blank the
+whole diagram:
+
+1. The reference is **`ActivityGraph`**. `Namespace` is accepted by the writer but
+   the partition then has no owning graph and nothing renders.
+2. The view type is `UMLSwimlaneView`. There is a `PartitionView` string in the
+   binary (a COM interface name), but `UMLPartitionView` is not a stored type:
+   emitting it drops every view in the diagram.
+3. The view's only child is `NameLabel`. A `NameCompartment`
+   (`UMLNameCompartmentView`) makes the file fail to load.
+4. There is **no `Direction` attribute**. `UMLSwimlaneDirectionKind` exists in the
+   binary but is not stored on the view; writing a `Direction` attribute errors.
+5. Colour: let `applyDefaultDiagramPalette` style the view like any other. Do not
+   hand-write `LineColor` / `FillColor` if the project must pass
+   `validate_xpd.py --require-standard-palette`.
+6. StarUML paints a small circled **`(M)`** marker near the middle of every
+   swimlane view. It is cosmetic, appears for hand-drawn lanes too, and cannot be
+   removed from the file.
+7. Emit the lane views **before** the node views in `DiagramView.OwnedViews` so
+   the lanes paint behind the activities.
+
+Ownership: a lane owns nothing. The saved file contains no `ContainedViews`, no
+`ContainerView` and no `OwnerPartitions`; activities stay `Subvertices` of the
+graph's `Top` composite state and merely sit geometrically inside the lane
+rectangle. Dragging a lane therefore leaves the activities behind — this is a
+property of the tool, not of the file.
+
+See `scripts/example_swimlane.js` and `assets/activity-with-swimlanes.uml`.
+
+## 9. Statechart internals: entry / do / exit, and the internal-transition reality
+
+### 9.1 Internal activities (they do render, in the box)
+
+A state carries three action collections. Items are `UMLUninterpretedAction`
+with a `Name` and an `Owner` reference; no view is needed, the state view's
+`InternalTransitionCompartment` paints them as `entry / …`, `do / …`, `exit / …`.
+
+```xml
+<XPD:OBJ name="Subvertices[2]" type="UMLCompositeState" guid="…">
+<XPD:ATTR name="Name" type="string">已支付</XPD:ATTR>
+<XPD:REF name="ContainerState">…Top…</XPD:REF>
+<XPD:ATTR name="#EntryActions" type="integer">1</XPD:ATTR>
+<XPD:OBJ name="EntryActions[0]" type="UMLUninterpretedAction" guid="…">
+<XPD:ATTR name="Name" type="string">记录支付时间</XPD:ATTR>
+<XPD:REF name="Owner">…state guid…</XPD:REF>
+</XPD:OBJ>
+<XPD:ATTR name="#ExitActions" type="integer">1</XPD:ATTR>
+<XPD:OBJ name="ExitActions[0]" type="UMLUninterpretedAction" guid="…">
+<XPD:ATTR name="Name" type="string">释放库存锁定</XPD:ATTR>
+<XPD:REF name="Owner">…state guid…</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="InternalTransitionCompartment" type="UMLInternalTransitionCompartmentView" guid="…">
+<XPD:REF name="Model">…state guid…</XPD:REF>
+</XPD:OBJ>
+```
+
+**The silent trap:** `EntryActions`, `ExitActions` and `DoActivities` are not in
+`xpd.DEFAULT_ARRAY_FIELDS`. Emitted as children without being listed in
+`arrayFields`, they get no `#EntryActions` counter, the app ignores the whole
+collection, and the box renders name-only with no error dialog. Always write:
+
+```js
+const ARRAYS = xpd.DEFAULT_ARRAY_FIELDS.concat(['EntryActions', 'ExitActions', 'DoActivities']);
+xpd.writeFile(out, project, { arrayFields: ARRAYS });
+```
+
+### 9.2 Internal transitions: not supported in 5.0.2
+
+Confirmed twice — by the collection editor of a state (tabs: 入口动作 / 执行动作 /
+出口动作 plus a read-only 「关系」 list) and by diffing a file saved after drawing
+a self-transition with the 「自转换」 tool:
+
+- the app never writes an `InternalTransitions` field (a hand-authored one is
+  silently ignored, and the compartment stays empty);
+- the drawn self-transition is stored as an ordinary `UMLTransition` in the state
+  machine's `Transitions`, with `Source` and `Target` both pointing at the state;
+- with a transition view it paints a **self-loop arrow** and puts the label
+  **outside** the state box — never an in-box row.
+
+```xml
+<!-- self-transition: the only representation of "state unchanged" -->
+<XPD:OBJ name="Transitions[7]" type="UMLTransition" guid="…">
+<XPD:REF name="StateMachine">…state machine…</XPD:REF>
+<XPD:REF name="Source">…state guid…</XPD:REF>
+<XPD:REF name="Target">…state guid…</XPD:REF>
+<XPD:ATTR name="Name" type="string">修改收货地址 [未发货] / 更新运单</XPD:ATTR>
+</XPD:OBJ>
+```
+
+Practical guidance:
+
+- If the deliverable must show "no arrow", emit the self-transition **without** a
+  matching `UMLTransitionView`. It then exists in the model (and shows up in the
+  state's 「关系」 list) but is not painted.
+- If the user needs it visible on the diagram, it will be an arrow — say so
+  instead of promising an in-box internal transition.
+- Reference sheets that ask for "internal transitions written inside the state
+  box" describe UML 2 tools (StarUML 6/7), not this one.
+- Note the built-in rule `MSG_VERIFY_ACTIONSTATE_1`: an *action* state may not
+  have internal transitions, exit actions or do activities at all.
+
+See `scripts/example_statechart.js` and `assets/statechart-example.uml`.
