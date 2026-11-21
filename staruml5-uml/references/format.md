@@ -376,9 +376,11 @@ whole diagram:
 5. Colour: let `applyDefaultDiagramPalette` style the view like any other. Do not
    hand-write `LineColor` / `FillColor` if the project must pass
    `validate_xpd.py --require-standard-palette`.
-6. StarUML paints a small circled **`(M)`** marker near the middle of every
-   swimlane view. It is cosmetic, appears for hand-drawn lanes too, and cannot be
-   removed from the file.
+6. StarUML paints a small circled **`(M)`** marker inside every swimlane view.
+   It is drawn at runtime: a lane drawn by hand in the GUI shows it even though
+   the saved file contains no `MultiplicityLabel` or any other label for it, so
+   deleting labels from the file does not remove it. Treat it as cosmetic and
+   mention it to the user rather than trying to suppress it.
 7. Emit the lane views **before** the node views in `DiagramView.OwnedViews` so
    the lanes paint behind the activities.
 
