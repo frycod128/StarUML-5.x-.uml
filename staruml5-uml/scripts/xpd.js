@@ -93,7 +93,12 @@ const DEFAULT_ARRAY_FIELDS = [
   'Operations', 'Parameters', 'Subvertices', 'Transitions', 'TaggedValues',
   'OwnedCollaborationInstanceSets', 'InteractionInstanceSets',
   'ParticipatingInstances', 'ParticipatingLinks', 'ParticipatingStimuli',
-  'Fragments', 'Operands', 'ContainedViews', 'Messages', 'OwnedFrames'
+  'Fragments', 'Operands', 'ContainedViews', 'Messages', 'OwnedFrames',
+  // Activity-graph lanes and state action compartments. All four are real
+  // collections in the app; omitting one silently produces a single unindexed
+  // child (no '#Field' counter) and the app then draws a placeholder marker
+  // ("(M)" for a lane, nothing at all for the action compartments).
+  'Partitions', 'EntryActions', 'DoActivities', 'ExitActions'
 ];
 
 const CLASSIFIERS = [

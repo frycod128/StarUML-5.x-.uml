@@ -376,11 +376,14 @@ whole diagram:
 5. Colour: let `applyDefaultDiagramPalette` style the view like any other. Do not
    hand-write `LineColor` / `FillColor` if the project must pass
    `validate_xpd.py --require-standard-palette`.
-6. StarUML paints a small circled **`(M)`** marker inside every swimlane view.
-   It is drawn at runtime: a lane drawn by hand in the GUI shows it even though
-   the saved file contains no `MultiplicityLabel` or any other label for it, so
-   deleting labels from the file does not remove it. Treat it as cosmetic and
-   mention it to the user rather than trying to suppress it.
+6. **A circled `(M)` inside the lane means the partition was not emitted as a
+   collection.** `Partitions` must be listed in `arrayFields`; if it is not, the
+   child is written as `name="Partitions"` with no `[i]` and no `#Partitions`
+   counter, the app cannot bind it to its partition collection, and it paints a
+   placeholder marker instead. Lanes drawn by hand in the GUI never show the
+   marker because the app always writes the indexed form. `Partitions` was added
+   to `xpd.DEFAULT_ARRAY_FIELDS`; older copies of `xpd.js` need it passed
+   explicitly.
 7. Emit the lane views **before** the node views in `DiagramView.OwnedViews` so
    the lanes paint behind the activities.
 
@@ -419,10 +422,11 @@ with a `Name` and an `Owner` reference; no view is needed, the state view's
 </XPD:OBJ>
 ```
 
-**The silent trap:** `EntryActions`, `ExitActions` and `DoActivities` are not in
-`xpd.DEFAULT_ARRAY_FIELDS`. Emitted as children without being listed in
-`arrayFields`, they get no `#EntryActions` counter, the app ignores the whole
-collection, and the box renders name-only with no error dialog. Always write:
+**The silent trap:** emitting these collections without listing them in
+`arrayFields` gives each child no `#EntryActions` counter - the child is written as
+`name="EntryActions"` instead of `EntryActions[0]` - and the app silently drops the
+whole collection: the box renders name-only, with no error dialog. They are in
+`xpd.DEFAULT_ARRAY_FIELDS` now, but pass them explicitly if you use an older copy:
 
 ```js
 const ARRAYS = xpd.DEFAULT_ARRAY_FIELDS.concat(['EntryActions', 'ExitActions', 'DoActivities']);

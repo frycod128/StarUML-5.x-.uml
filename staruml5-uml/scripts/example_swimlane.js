@@ -186,5 +186,8 @@ for (const f of FLOWS) {
 }
 
 xpd.applyDefaultDiagramPalette(project);
+// 'Partitions' is in xpd.DEFAULT_ARRAY_FIELDS since this session's fix; without it the
+// partition is written as name="Partitions" (no [0], no counter) and StarUML paints
+// a circled "(M)" placeholder inside the lane.
 xpd.writeFile(out, project);
 console.log(`wrote ${out} (${LANES.length} lanes, ${NODES.length} nodes, ${FLOWS.length} flows)`);

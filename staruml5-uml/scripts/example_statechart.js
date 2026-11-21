@@ -40,7 +40,9 @@ const xpd = require('./xpd');
 const out = process.argv[2] || 'statechart-example.uml';
 const A = 1.5707963267949;
 
-// EntryActions / ExitActions / DoActivities must be declared as collections
+// EntryActions / ExitActions / DoActivities are in xpd.DEFAULT_ARRAY_FIELDS since
+// this session's fix. kept explicit so the example still works against an older
+// copy of xpd.js, where omitting them silently dropped the whole collection.
 const ARRAYS = xpd.DEFAULT_ARRAY_FIELDS.concat(['EntryActions', 'ExitActions', 'DoActivities']);
 
 const project = new xpd.Elem('DocumentElement', 'UMLProject');
